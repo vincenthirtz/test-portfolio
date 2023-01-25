@@ -84,7 +84,7 @@ const Project1 = (): JSX.Element => {
           link=""
           year={2019}
           services={[
-            `Aide à la fabrication de l’oeuvre « Coral Eternal» de l’artiste Aude Bourgine`,
+            `Aide à la fabrication de l’oeuvre « Coral Eternal » de l’artiste Aude Bourgine`,
             'Crédits photo: Aude Bourgine, images provenant du site de l’artiste',
           ]}
           elements={[
