@@ -95,7 +95,6 @@ const About = (): JSX.Element => {
                 <h5>Typographies</h5>
                 <ul>
                   <li>Agenda</li>
-                  <li>TheNightWatch</li>
                 </ul>
               </div>
             </div>
