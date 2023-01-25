@@ -48,6 +48,7 @@ const About = (): JSX.Element => {
                 vitrines, muséographie et évènementiel. Je participe également aux montages,
                 démontages, à l’exploitation de sites et à la régie plateau de spectacles.
               </p>
+              <br />
               <p>
                 J’exerce mon travail au sein de compagnies, telles que la compagnie de scénographie
                 Les Plastiqueurs à Rouen, de théâtres nationaux, notamment pour le Théâtre de
