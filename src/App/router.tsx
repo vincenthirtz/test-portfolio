@@ -7,8 +7,6 @@ import Project1 from 'pages/Project1';
 import Services from 'pages/Services';
 import MentionsLegales from 'pages/MentionsLegales';
 import Error404 from 'pages/Error404';
-import CreativeCV from 'pages/CreativeCV';
-import CreativeCV2 from 'pages/CreativeCV2';
 
 const Router = (): JSX.Element => {
   return (
@@ -27,10 +25,6 @@ const Router = (): JSX.Element => {
         <Route path="/services" element={<Services />} />
 
         <Route path="/legal-notices" element={<MentionsLegales />} />
-
-        <Route path="/creative-cv" element={<CreativeCV />} />
-
-        <Route path="/creative-cv-2" element={<CreativeCV2 />} />
 
         <Route path="*" element={<Error404 />} />
       </Routes>

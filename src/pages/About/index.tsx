@@ -31,8 +31,8 @@ const About = (): JSX.Element => {
           {/* On utilise le parallax sur notre container avec des valeurs un peu aléatoire mais qui fait que ça marche */}
           <Parallax className={styles.citation__container} translateX={['380px', '-250px']}>
             <div className={`${styles.citation} ${styles.animation__background}`}>
-              <h1>L’art est dans l’infini detail.</h1>
-              <h2>Federico Fellini</h2>
+              {/* <h1>L’art est dans l’infini detail.</h1> */}
+              {/* <h2>Federico Fellini</h2> */}
             </div>
           </Parallax>
           {/* On utilise le parallax sur notre container avec des valeurs un peu aléatoire mais qui fait que ça marche */}
@@ -58,32 +58,6 @@ const About = (): JSX.Element => {
             </div>
             <div className={`${styles.item} ${styles.animation__transform_top}`}>
               <h4>2. Associations</h4>
-              <ul>
-                <li>
-                  <a href="http://www.faismoisigne.org/" target="_blank">
-                    Fais-Moi Signe
-                  </a>{' '}
-                  - Communication, Graphisme
-                </li>
-                <li>
-                  <a href="https://kleidi.org/" target="_blank">
-                    Kleidi
-                  </a>{' '}
-                  - Chef de projet
-                </li>
-                <li>
-                  <a href="https://www.instagram.com/c.production_/" target="_blank">
-                    C-Production
-                  </a>{' '}
-                  - Graphiste & Vidéaste
-                </li>
-                <li>
-                  <a href="https://etapecoworking.fr/mediation-numerique" target="_blank">
-                    ETAPE Coworking
-                  </a>{' '}
-                  - Médiateur Numérique
-                </li>
-              </ul>
             </div>
             <div className={`${styles.item} ${styles.animation__transform_top}`}>
               <h4>3. Presse</h4>
@@ -92,18 +66,8 @@ const About = (): JSX.Element => {
               <h4>4. Réseaux</h4>
               <ul>
                 <li>
-                  <a href="https://www.instagram.com/piboyeux.design/" target="_blank">
+                  <a href="https://www.instagram.com/margotchalmeton/" target="_blank">
                     Instagram
-                  </a>
-                </li>
-                <li>
-                  <a href="https://www.pinterest.fr/EthanPiboyeux/" target="_blank">
-                    Pinterest
-                  </a>
-                </li>
-                <li>
-                  <a href="https://www.linkedin.com/in/ethan-piboyeux-4b674b194/" target="_blank">
-                    LinkedIn
                   </a>
                 </li>
               </ul>
@@ -117,17 +81,14 @@ const About = (): JSX.Element => {
                     cv.pdf
                   </a>
                 </li>
-                <li>
-                  <NavLink to="/creative-cv">cv-créatif.html</NavLink>
-                </li>
               </ul>
             </div>
             <div className={`${styles.item} ${styles.animation__transform_top}`}>
               <h4>6. Crédits</h4>
               <div className={styles.credit}>
-                <h5>Code & Love</h5>
-                <a href="https://www.samilafrance.com/" target="_blank">
-                  Sami Lafrance
+                <h5>Développement web</h5>
+                <a href="https://www.vincenthirtz.fr" target="_blank">
+                  Vincent Hirtz
                 </a>
               </div>
               <div className={styles.credit}>
