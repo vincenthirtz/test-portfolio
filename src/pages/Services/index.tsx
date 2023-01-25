@@ -18,7 +18,19 @@ const Services = (): JSX.Element => {
         <title>Margot Chalmeton | Mes services</title>
         <meta
           name="description"
-          content="Production de beaux films et de beaux visuels, qui racontent avec élégance les histoires des marques et artistes. Design graphique, tournage, production 3D, shooting photo, motion design, VFX, Piboyeux prend tout en charge, de la conception à la production."
+          content="
+          Je suis diplômée d’un BTS Design de mode, textile et environnement spécialité
+          matériaux et surface et d’un CAP d’accessoiriste réalisateur. Intermittente du
+          spectacle et auto-entrepreneuse, je travaille depuis 2018 pour la conception et la
+          fabrication de décors et accessoires dédiés aux arts de la rue, au théâtre, cinéma,
+          vitrines, muséographie et évènementiel. Je participe également aux montages,
+          démontages, à l’exploitation de sites et à la régie plateau de spectacles.
+          J’exerce mon travail au sein de compagnies, telles que la compagnie de scénographie
+          Les Plastiqueurs à Rouen, de théâtres nationaux, notamment pour le Théâtre de
+          l’Odéon ou encore aux cotés d’artistes comme Aude Bourgine ou de sociétés de
+          production de films. Je réalise des projets de décors seule, pour des particuliers
+          et entreprises mais aussi en collaboration avec des artistes, constructeurs et
+          techniciens."
         />
       </Helmet>
 
@@ -26,10 +38,24 @@ const Services = (): JSX.Element => {
       <div className={styles.container}>
         <div className={styles.text}>
           <p className={styles.animation__transform_top}>
-            Production de beaux films et de beaux visuels, qui racontent avec élégance les histoires
-            des marques et artistes. <span>Design graphique</span>, <span>tournage</span>,{' '}
-            <span>production 3D</span>, <span>shooting photo</span>, <span>motion design</span>,{' '}
-            <span>VFX</span>, Piboyeux prend tout en charge, de la conception à la production.
+            Je suis diplômée d’un{' '}
+            <span>
+              BTS Design de mode, textile et environnement spécialité matériaux et surface
+            </span>{' '}
+            et d’un <span>CAP d’accessoiriste réalisateur</span>. Intermittente du spectacle et
+            auto-entrepreneuse, je travaille depuis 2018 pour la conception et la fabrication de
+            décors et accessoires dédiés aux arts de la rue, au théâtre, cinéma, vitrines,
+            muséographie et évènementiel. Je participe également aux montages, démontages, à
+            l’exploitation de sites et à la régie plateau de spectacles.
+          </p>
+          <br />
+          <p className={styles.animation__transform_top}>
+            J’exerce mon travail au sein de compagnies, telles que la compagnie de scénographie{' '}
+            <span>Les Plastiqueurs</span> à Rouen, de théâtres nationaux, notamment pour le{' '}
+            <span>Théâtre de l’Odéon</span> ou encore aux cotés d’artistes comme{' '}
+            <span>Aude Bourgine</span> ou de sociétés de production de films. Je réalise des projets
+            de décors seule, pour des particuliers et entreprises mais aussi en collaboration avec
+            des artistes, constructeurs et techniciens.
           </p>
         </div>
         <div className={`${styles.link__contact} ${styles.animation__background}`}>
