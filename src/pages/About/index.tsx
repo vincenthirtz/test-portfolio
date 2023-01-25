@@ -19,10 +19,10 @@ const About = (): JSX.Element => {
       <Layout>
         {/* Pour le SEO on utilise Helmet, on peut y rajouter tout les tags du Head que l'on veut pour cette page spécifiquement */}
         <Helmet>
-          <title>Ethan Piboyeux | À propos</title>
+          <title>Margot Chalmeton | À propos</title>
           <meta
             name="description"
-            content="Ethan est un jeune vidéaste, graphiste et photographe basé sur Bordeaux. Il est spécialisé dans la direction artistique et la réalisation. Sa vision artistique est influencé par le monde urbain et le monde du luxe."
+            content="Conception et fabrication d'accessoires, de décors et de textiles et matières destinés à la scénographie de spectacle, la muséographie, aux décors de cinéma ou d'évènements et de vitrines."
           />
         </Helmet>
 
@@ -38,11 +38,22 @@ const About = (): JSX.Element => {
           {/* On utilise le parallax sur notre container avec des valeurs un peu aléatoire mais qui fait que ça marche */}
           <Parallax className={styles.text} y={['-250px', '450px']}>
             <div className={`${styles.item} ${styles.animation__transform_top}`}>
-              <h4>1. Ethan Piboyeux</h4>
+              <h4>1. Margot Chalmeton</h4>
               <p>
-                Ethan est un jeune vidéaste, graphiste et photographe basé sur Bordeaux. Il est
-                spécialisé dans la direction artistique et la réalisation. Sa vision artistique est
-                influencé par le monde urbain et le monde du luxe.
+                Je suis diplômée d’un BTS Design de mode, textile et environnement spécialité
+                matériaux et surface et d’un CAP d’accessoiriste réalisateur. Intermittente du
+                spectacle et auto-entrepreneuse, je travaille depuis 2018 pour la conception et la
+                fabrication de décors et accessoires dédiés aux arts de la rue, au théâtre, cinéma,
+                vitrines, muséographie et évènementiel. Je participe également aux montages,
+                démontages, à l’exploitation de sites et à la régie plateau de spectacles.
+              </p>
+              <p>
+                J’exerce mon travail au sein de compagnies, telles que la compagnie de scénographie
+                Les Plastiqueurs à Rouen, de théâtres nationaux, notamment pour le Théâtre de
+                l’Odéon ou encore aux cotés d’artistes comme Aude Bourgine ou de sociétés de
+                production de films. Je réalise des projets de décors seule, pour des particuliers
+                et entreprises mais aussi en collaboration avec des artistes, constructeurs et
+                techniciens.
               </p>
             </div>
             <div className={`${styles.item} ${styles.animation__transform_top}`}>
@@ -76,9 +87,6 @@ const About = (): JSX.Element => {
             </div>
             <div className={`${styles.item} ${styles.animation__transform_top}`}>
               <h4>3. Presse</h4>
-              <a href="../pdf/article-courrier-gironde-ethan-piboyeux-08-01-21.pdf" target="_blank">
-                Courrier de Gironde 08.01.21
-              </a>
             </div>
             <div className={`${styles.item} ${styles.animation__transform_top}`}>
               <h4>4. Réseaux</h4>
@@ -105,8 +113,8 @@ const About = (): JSX.Element => {
               <ul>
                 <li>
                   {' '}
-                  <a href="../pdf/cv-ethan-piboyeux.pdf" target="_blank">
-                    cv-piboyeux.pdf
+                  <a href="../pdf/cv.pdf" target="_blank">
+                    cv.pdf
                   </a>
                 </li>
                 <li>

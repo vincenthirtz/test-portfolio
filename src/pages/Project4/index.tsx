@@ -66,7 +66,7 @@ const Project4 = (): JSX.Element => {
     <Layout>
       {/* Pour le SEO on utilise Helmet, on peut y rajouter tout les tags du Head que l'on veut pour cette page spécifiquement */}
       <Helmet>
-        <title>Ethan Piboyeux | Trieste</title>
+        <title>Margot Chalmeton | Trieste</title>
         <meta
           name="description"
           content="Trieste est un projet de site interactif et artistique en collaboration avec le musée des Beaux-Arts de Bordeaux dans le cadre de la Bacchaweek."
@@ -84,6 +84,7 @@ const Project4 = (): JSX.Element => {
           link="https://trieste.netlify.app/"
           year={2021}
           services={['Direction artistique', 'Design graphique', 'Écriture de scénario']}
+          elements={[]}
         />
 
         <p className={`${styles.text__introduction} ${styles.animation__transform_top}`}>

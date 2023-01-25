@@ -66,7 +66,7 @@ const Project8 = (): JSX.Element => {
     <Layout>
       {/* Pour le SEO on utilise Helmet, on peut y rajouter tout les tags du Head que l'on veut pour cette page spécifiquement */}
       <Helmet>
-        <title>Ethan Piboyeux | Ortolé Designer (Packshot)</title>
+        <title>Margot Chalmeton | Ortolé Designer (Packshot)</title>
         <meta
           name="description"
           content="Direction artistique, shooting packshot photo et vidéo pour la mise en avant de collection de lunettes pour Ortolé Designer (Tropical Optic Shop), réalisé par Ethan Piboyeux."
@@ -84,6 +84,7 @@ const Project8 = (): JSX.Element => {
           link="https://ortole.com/"
           year={2021}
           services={['Direction artistique', 'Shooting Photo & Vidéo']}
+          elements={[]}
         />
 
         <div className={styles.images__container}>

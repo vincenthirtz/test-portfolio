@@ -11,20 +11,12 @@ const CreativeCV2 = (): JSX.Element => {
     window.scrollTo(0, 0);
   }, []);
 
-  // Fontion pour télécharger le fichier illustrator
-  const downloadFile = () => {
-    const link = document.createElement('a');
-    link.href = 'downloads/cv-creative.ai';
-    link.download = 'cv-creative-ethan-piboyeux.ai';
-    link.click();
-  };
-
   return (
     <Layout>
       {/* Pour le SEO on utilise Helmet, on peut y rajouter tout les tags du Head que l'on veut pour cette page spécifiquement */}
       <Helmet>
-        <title>Ethan Piboyeux | CV créatif</title>
-        <meta name="description" content="CV créatif d'Ethan Piboyeux." />
+        <title>Margot Chalmeton| CV créatif</title>
+        <meta name="description" content="CV Margot Chalmeton" />
       </Helmet>
 
       <Header url="/cv-créatif-2" />
@@ -37,10 +29,6 @@ const CreativeCV2 = (): JSX.Element => {
         </p>
         <img src="images/stickers/stickers-illustration.svg" className={styles.poster} />
         <div className={styles.footer}>
-          <Button url="/creative-cv">Page 1</Button>
-          <div className={styles.desktop_only} onClick={downloadFile}>
-            <Button>Ai file</Button>
-          </div>
           <Button url="/">Home</Button>
         </div>
       </div>

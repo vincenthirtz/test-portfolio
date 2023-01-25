@@ -14,8 +14,8 @@ const MentionsLegales = (): JSX.Element => {
     <Layout>
       {/* Pour le SEO on utilise Helmet, on peut y rajouter tout les tags du Head que l'on veut pour cette page spécifiquement */}
       <Helmet>
-        <title>Ethan Piboyeux | Mentions légales</title>
-        <meta name="description" content="Mentions légales de Ethan Piboyeux." />
+        <title>Margot Chalmeton | Mentions légales</title>
+        <meta name="description" content="Mentions légales de Margot Chalmeton." />
       </Helmet>
 
       <Header url="/légales" />
@@ -23,11 +23,10 @@ const MentionsLegales = (): JSX.Element => {
         <div className={styles.item}>
           <h2 className={styles.animation__background}>Identification</h2>
           <div className={styles.animation__transform_top}>
-            <p>Ethan Piboyeux</p>
-            <p>7 chemin de Carros, lieu-dit jeansotte 33650 St Selve</p>
-            <p>07 81 18 48 22 / contact@ethanpiboyeux.fr</p>
-            <p>Directeur de la publication et responsable de la rédaction : Ethan Piboyeux</p>
-            <p>Hébergeur du site : Ethan Piboyeux</p>
+            <p>Margot Chalmeton</p>
+            <p>margotchalmeton (@) gmail.com</p>
+            <p>Directeur de la publication et responsable de la rédaction : Margot Chalmeton</p>
+            <p>Hébergeur du site : Vincent Hirtz</p>
           </div>
         </div>
         <div className={styles.item}>

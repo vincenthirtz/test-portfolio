@@ -23,10 +23,10 @@ const Home = (): JSX.Element => {
     <Layout>
       {/* Pour le SEO on utilise Helmet, on peut y rajouter tout les tags du Head que l'on veut pour cette page spécifiquement */}
       <Helmet>
-        <title>Ethan Piboyeux | Portfolio</title>
+        <title>Margot Chalmeton | Portfolio</title>
         <meta
           name="description"
-          content="Ethan est un jeune vidéaste, graphiste et photographe basé sur Bordeaux. Il est spécialisé dans la direction artistique et la réalisation. Sa vision artistique est influencé par le monde urbain et le monde du luxe."
+          content="Conception et fabrication d'accessoires, de décors et de textiles et matières destinés à la scénographie de spectacle, la muséographie, aux décors de cinéma ou d'évènements et de vitrines."
         />
       </Helmet>
 
@@ -35,12 +35,12 @@ const Home = (): JSX.Element => {
         <ProjectHomePage
           projects={[
             {
-              name: 'ORTOLE',
-              year: 2021,
-              services: 'Shooting Photo & Vidéo',
-              link: 'ortole-designer-packshot',
-              image: 'images/ortole-packshot/ortole-packshot-ethan-piboyeux.jpg',
-              alt: 'Direction artistique, shooting packshot photo et vidéo pour la mise en avant de collection de lunettes pour Ortolé Designer (Tropical Optic Shop), réalisé par Ethan Piboyeux.',
+              name: 'Aude Bourgine',
+              year: 2019,
+              services: `Coral Eternal`,
+              link: 'aude-bourgine',
+              image: 'images/ACCESSOIRES ET DECORS/AUDE BOURGINE 2019/hermes-rouge.webp',
+              alt: 'Aide à la fabrication de l’oeuvre « Coral Eternal » de l’artiste Aude Bourgine',
             },
             {
               name: '9 MILLI',
@@ -51,11 +51,11 @@ const Home = (): JSX.Element => {
               alt: 'Réalisation du film (music video) de Galaburdy pour le single 9 MILLI.',
             },
             {
-              name: 'Louis Pion',
-              year: 2020,
+              name: 'Aude Bourgine',
+              year: 2019,
               services: 'Production vidéo',
-              link: 'louis-pion',
-              image: 'images/louis-pion/louis-pion-ethan-piboyeux.jpg',
+              link: 'aude-bourgine',
+              image: 'images/ACCESSOIRES ET DECORS/AUDE BOURGINE 2019/hermes-rouge.webp',
               alt: 'Vidéo de présentation de produit de la Montre ACHILLE XK1491IN2-15 de louis pion, réalisé par Ethan Piboyeux.',
             },
             {

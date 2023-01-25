@@ -15,14 +15,14 @@ const Contact = (): JSX.Element => {
     <Layout>
       {/* Pour le SEO on utilise Helmet, on peut y rajouter tout les tags du Head que l'on veut pour cette page spécifiquement */}
       <Helmet>
-        <title>Ethan Piboyeux | Contact</title>
-        <meta name="description" content="Contactez Ethan Piboyeux par mail." />
+        <title>Margot Chalmeton | Contact</title>
+        <meta name="description" content="Contactez Margot Chalmeton par mail." />
       </Helmet>
 
       <Header url="/contact" />
       <div className={styles.container}>
         <p className={`${styles.contact__link} ${styles.animation__background}`}>
-          contact (@) ethanpiboyeux.fr
+          margotchalmeton (@) gmail.com
         </p>
       </div>
       <Footer allProjectsDisplay={false} />

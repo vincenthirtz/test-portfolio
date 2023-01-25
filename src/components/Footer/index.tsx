@@ -41,7 +41,7 @@ const Footer = (props: PropsType): JSX.Element => {
       {/* Pour garder les contacts à droite */}
       {!allProjectsDisplay && <div></div>}
       <div className={styles.contact__logo}>
-        <a href="https://www.instagram.com/piboyeux.design/" target="_blank">
+        <a href="https://www.instagram.com/margotchalmeton/" target="_blank">
           <Instagram />
         </a>
         <NavLink to="/contact">

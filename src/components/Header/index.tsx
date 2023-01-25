@@ -14,7 +14,7 @@ const Header = (props: PropsType): JSX.Element => {
     <header className={styles.container}>
       <div className={styles.logo__container}>
         <NavLink to="/" className={styles.logo}>
-          ethanpiboyeux
+          Margot Chalmeton
         </NavLink>
         <p className={styles.logo__url}>{url}</p>
       </div>

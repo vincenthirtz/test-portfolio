@@ -67,7 +67,7 @@ const Project6 = (): JSX.Element => {
     <Layout>
       {/* Pour le SEO on utilise Helmet, on peut y rajouter tout les tags du Head que l'on veut pour cette page spécifiquement */}
       <Helmet>
-        <title>Ethan Piboyeux | 9 MILLI</title>
+        <title>Margot Chalmeton | 9 MILLI</title>
         <meta
           name="description"
           content="Réalisation du film (music video) de Galaburdy pour le single 9 MILLI."
@@ -85,6 +85,7 @@ const Project6 = (): JSX.Element => {
           link="https://www.youtube.com/watch?v=o93or-wdENU"
           year={2021}
           services={['Réalisation vidéo', 'Direction artistique', 'Montage vidéo']}
+          elements={[]}
         />
 
         <div className={styles.images__container}>
@@ -126,7 +127,7 @@ const Project6 = (): JSX.Element => {
           <Credits
             credits={[
               {
-                name: 'Ethan Piboyeux',
+                name: 'Margot Chalmeton',
                 role: 'Réalisateur, Scénario, Montage, VFX, GFX',
               },
               {
@@ -176,7 +177,7 @@ const Project6 = (): JSX.Element => {
             ]}
           />
           <div className={styles.animation__background}>
-            <LinkNextProject text="Louis Pion" link="/louis-pion" />
+            <LinkNextProject text="Aude Bourgine" link="/aude-bourgine" />
           </div>
         </div>
       </div>

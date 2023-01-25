@@ -29,7 +29,7 @@ const Router = (): JSX.Element => {
 
         <Route path="/contact" element={<Contact />} />
 
-        <Route path="/louis-pion" element={<Project1 />} />
+        <Route path="/aude-bourgine" element={<Project1 />} />
 
         <Route path="/mode" element={<Project2 />} />
 

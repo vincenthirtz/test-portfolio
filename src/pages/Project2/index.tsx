@@ -67,7 +67,7 @@ const Project2 = (): JSX.Element => {
     <Layout>
       {/* Pour le SEO on utilise Helmet, on peut y rajouter tout les tags du Head que l'on veut pour cette page spécifiquement */}
       <Helmet>
-        <title>Ethan Piboyeux | Mode</title>
+        <title>Margot Chalmeton | Mode</title>
         <meta
           name="description"
           content="Design Graphique de la pochette (cover) du single « Mode » de l'artiste Lycan, réalisé par Ethan Piboyeux."
@@ -85,6 +85,7 @@ const Project2 = (): JSX.Element => {
           link="https://open.spotify.com/track/3Cdho3oYoyHUKLvd06s2Uw?si=8144267fd9914bac"
           year={2021}
           services={['Direction artistique', 'Design graphique']}
+          elements={[]}
         />
 
         <div className={styles.images__container}>

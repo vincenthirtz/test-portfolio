@@ -84,6 +84,7 @@ const Project7 = (): JSX.Element => {
           link="https://open.spotify.com/artist/4hLEWmW8SCJYxZkWfSJakZ"
           year={2021}
           services={['Direction artistique', 'Design graphique']}
+          elements={[]}
         />
 
         <div className={styles.images__container}>

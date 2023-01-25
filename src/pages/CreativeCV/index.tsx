@@ -129,8 +129,8 @@ const CreativeCV = (): JSX.Element => {
     <Layout>
       {/* Pour le SEO on utilise Helmet, on peut y rajouter tout les tags du Head que l'on veut pour cette page spécifiquement */}
       <Helmet>
-        <title>Ethan Piboyeux | CV créatif</title>
-        <meta name="description" content="CV créatif d'Ethan Piboyeux." />
+        <title>Margot Chalmeton | CV créatif</title>
+        <meta name="description" content="CV Margot Chalmeton" />
       </Helmet>
 
       <Header url="/cv-créatif" />

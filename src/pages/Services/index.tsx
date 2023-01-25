@@ -15,7 +15,7 @@ const Services = (): JSX.Element => {
     <Layout>
       {/* Pour le SEO on utilise Helmet, on peut y rajouter tout les tags du Head que l'on veut pour cette page spécifiquement */}
       <Helmet>
-        <title>Ethan Piboyeux | Mes services</title>
+        <title>Margot Chalmeton | Mes services</title>
         <meta
           name="description"
           content="Production de beaux films et de beaux visuels, qui racontent avec élégance les histoires des marques et artistes. Design graphique, tournage, production 3D, shooting photo, motion design, VFX, Piboyeux prend tout en charge, de la conception à la production."

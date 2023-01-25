@@ -67,7 +67,7 @@ const Project5 = (): JSX.Element => {
     <Layout>
       {/* Pour le SEO on utilise Helmet, on peut y rajouter tout les tags du Head que l'on veut pour cette page spécifiquement */}
       <Helmet>
-        <title>Ethan Piboyeux | Kleidi</title>
+        <title>Margot Chalmeton | Kleidi</title>
         <meta
           name="description"
           content="Kleidi est un dispositif visant à rendre accessible l'art aux personnes en situation de handicap visuel à travers une expérience innovante, sensorielle et auditive via le biais d'impressions de plaques tactiles et d'audioguides."
@@ -85,6 +85,7 @@ const Project5 = (): JSX.Element => {
           link="https://kleidi.org/"
           year={2021}
           services={['Chef de projet']}
+          elements={[]}
         />
 
         <p className={`${styles.text__introduction} ${styles.animation__transform_top}`}>
