@@ -29,14 +29,14 @@ const About = (): JSX.Element => {
         <Header url="/à-propos" />
         <div className={styles.container}>
           {/* On utilise le parallax sur notre container avec des valeurs un peu aléatoire mais qui fait que ça marche */}
-          <Parallax className={styles.citation__container} x={['380px', '-250px']}>
+          <Parallax className={styles.citation__container} translateX={['380px', '-250px']}>
             <div className={`${styles.citation} ${styles.animation__background}`}>
               <h1>L’art est dans l’infini detail.</h1>
               <h2>Federico Fellini</h2>
             </div>
           </Parallax>
           {/* On utilise le parallax sur notre container avec des valeurs un peu aléatoire mais qui fait que ça marche */}
-          <Parallax className={styles.text} y={['-250px', '450px']}>
+          <Parallax className={styles.text} translateY={['-250px', '450px']}>
             <div className={`${styles.item} ${styles.animation__transform_top}`}>
               <h4>1. Margot Chalmeton</h4>
               <p>
