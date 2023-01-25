@@ -1,5 +1,6 @@
 import { useEffect } from 'react';
 import { Helmet } from 'react-helmet-async';
+import Instagram from 'icons/Instagram';
 import Layout from 'components/Layout';
 import styles from './About.module.sass';
 import Header from 'components/Header';
@@ -62,13 +63,15 @@ const About = (): JSX.Element => {
             <div className={`${styles.item} ${styles.animation__transform_top}`}>
               <h4>3. Presse</h4>
             </div>
-            <div className={`${styles.item} ${styles.animation__transform_top}`}>
+            <div className={`${styles.item} ${styles.animation__transform_top}}`}>
               <h4>4. Réseaux</h4>
               <ul>
                 <li>
-                  <a href="https://www.instagram.com/margotchalmeton/" target="_blank">
-                    Instagram
-                  </a>
+                  <div className={`${styles.contact__logo}`}>
+                    <a href="https://www.instagram.com/margotchalmeton/" target="_blank">
+                      <Instagram />
+                    </a>
+                  </div>
                 </li>
               </ul>
             </div>

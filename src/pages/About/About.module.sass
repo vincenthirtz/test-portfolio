@@ -95,3 +95,22 @@
           margin-left: 3rem
         &:last-child
           margin-top: 1rem
+
+    .contact__logo
+      display: flex
+      align-items: center
+    @media screen and ( max-width: 850px )
+      flex-direction: column
+
+    a
+      &:first-child
+        margin-right: 1rem
+        @media screen and ( max-width: 850px )
+          margin-right: 0
+          margin-bottom: 1rem
+      &::before
+        width: 0
+
+      svg
+        height: 2.5rem
+        cursor: pointer
