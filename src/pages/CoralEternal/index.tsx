@@ -1,13 +1,13 @@
 import { useEffect, useState } from 'react';
 import { Helmet } from 'react-helmet-async';
 import Layout from 'components/Layout';
-import styles from './Project1.module.sass';
+import styles from './CoralEternal.module.sass';
 import Header from 'components/Header';
 import HeaderProject from 'components/HeaderProject';
 import LinkNextProject from 'components/LinkNextProject';
 import ModalImage from 'components/ModalImage';
 
-const Project1 = (): JSX.Element => {
+const CoralEternal = (): JSX.Element => {
   // Fonction pour être en haut de la page quand on arrive sur une page --> merci React.js
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -66,10 +66,10 @@ const Project1 = (): JSX.Element => {
     <Layout>
       {/* Pour le SEO on utilise Helmet, on peut y rajouter tout les tags du Head que l'on veut pour cette page spécifiquement */}
       <Helmet>
-        <title>Margot Chalmeton | Créatrice </title>
+        <title>Margot Chalmeton | Projet Coral Eternal</title>
         <meta
           name="description"
-          content="Vidéo de présentation de produit de la Montre ACHILLE XK1491IN2-15 de louis pion, réalisé par Ethan Piboyeux."
+          content="Aide à la fabrication de l’oeuvre « Coral Eternal » de l’artiste Aude Bourgine"
         />
       </Helmet>
 
@@ -127,7 +127,7 @@ const Project1 = (): JSX.Element => {
 
         <div className={styles.footer__project}>
           <div className={styles.animation__background}>
-            <LinkNextProject text="Une Vie" link="/une-vie" />
+            <LinkNextProject text="Cafete" link="/cafete" />
           </div>
         </div>
       </div>
@@ -135,4 +135,4 @@ const Project1 = (): JSX.Element => {
   );
 };
 
-export default Project1;
+export default CoralEternal;

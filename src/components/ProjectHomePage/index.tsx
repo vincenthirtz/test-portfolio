@@ -122,12 +122,22 @@ const ProjectHomePage = (props: PropsType): JSX.Element => {
                       <p
                         className={`${styles.project__services} ${styles.animation__transform_top_small}`}
                       >
+                        {project.services}
+                      </p>
+                      <p
+                        className={`${styles.project__services} ${styles.animation__transform_top_small}`}
+                      >
                         {project.featuring}
                       </p>
                       <p
                         className={`${styles.project__services} ${styles.animation__transform_top_small}`}
                       >
-                        {project.services}
+                        {project.featuring2}
+                      </p>
+                      <p
+                        className={`${styles.project__services} ${styles.animation__transform_top_small}`}
+                      >
+                        {project.featuring3}
                       </p>
                       <p
                         className={`${styles.project__year} ${styles.animation__transform_top_small}`}

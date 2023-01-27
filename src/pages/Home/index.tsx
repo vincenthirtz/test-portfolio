@@ -38,10 +38,23 @@ const Home = (): JSX.Element => {
               name: '',
               year: 2019,
               featuring: 'Aude Bourgine',
+              featuring2: '',
+              featuring3: '',
               services: `Projet vitrines Coral Eternal`,
               link: 'aude-bourgine',
               image: 'images/ACCESSOIRES ET DECORS/AUDE BOURGINE 2019/hermes-rouge.webp',
               alt: 'Aide à la fabrication de l’oeuvre « Coral Eternal » de l’artiste Aude Bourgine',
+            },
+            {
+              name: '',
+              year: 2020,
+              featuring: 'Frank Oettgen',
+              featuring2: 'Laura Reboul',
+              featuring3: 'La compagnie Les Grandes Personnes',
+              services: `Projet Cafete`,
+              link: 'cafete',
+              image: 'images/ACCESSOIRES ET DECORS/CAFETE/cafete-two.webp',
+              alt: 'Construction à la Villa Mais D’Ici, Aubervillers',
             },
           ]}
         />

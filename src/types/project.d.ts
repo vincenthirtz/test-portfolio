@@ -10,6 +10,8 @@ type ProjectFilterType = {
 type ProjectType = {
   name: string;
   featuring: string;
+  featuring2: string;
+  featuring3: string;
   year: number;
   services: string;
   link: string;
