@@ -35,9 +35,10 @@ const Home = (): JSX.Element => {
         <ProjectHomePage
           projects={[
             {
-              name: 'Aude Bourgine',
+              name: '',
               year: 2019,
-              services: `Coral Eternal`,
+              featuring: 'Aude Bourgine',
+              services: `Projet vitrines Coral Eternal`,
               link: 'aude-bourgine',
               image: 'images/ACCESSOIRES ET DECORS/AUDE BOURGINE 2019/hermes-rouge.webp',
               alt: 'Aide à la fabrication de l’oeuvre « Coral Eternal » de l’artiste Aude Bourgine',
