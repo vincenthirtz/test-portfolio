@@ -105,7 +105,7 @@ const Project1 = (): JSX.Element => {
           </video> */}
           <div className={`${styles.row} ${styles.animation__transform_top}`}>
             <img
-              src="images/ACCESSOIRES ET DECORS/AUDE BOURGINE 2019/animal-bleu.webp"
+              src="images/ACCESSOIRES ET DECORS/AUDE BOURGINE 2019/hermes-rouge.webp"
               onClick={handleImage}
             />
             <img
@@ -115,11 +115,11 @@ const Project1 = (): JSX.Element => {
           </div>
           <div className={`${styles.row} ${styles.animation__transform_top}`}>
             <img
-              src="images/ACCESSOIRES ET DECORS/AUDE BOURGINE 2019/mc-travaille.webp"
+              src="images/ACCESSOIRES ET DECORS/AUDE BOURGINE 2019/WIN_HK_2019_0078-scaled.jpg"
               onClick={handleImage}
             />
             <img
-              src="images/ACCESSOIRES ET DECORS/AUDE BOURGINE 2019/vitrines.webp"
+              src="images/ACCESSOIRES ET DECORS/AUDE BOURGINE 2019/WIN_HK_2019_0080-1-scaled.jpg"
               onClick={handleImage}
             />
           </div>
