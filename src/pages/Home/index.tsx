@@ -51,7 +51,7 @@ const Home = (): JSX.Element => {
               featuring: 'Frank Oettgen',
               featuring2: 'Laura Reboul',
               featuring3: 'La compagnie Les Grandes Personnes',
-              services: `Projet Cafete`,
+              services: `Projet Cafêtes Mobiles`,
               link: 'cafete',
               image: 'images/ACCESSOIRES ET DECORS/CAFETE/cafete-two.webp',
               alt: 'Construction à la Villa Mais D’Ici, Aubervillers',

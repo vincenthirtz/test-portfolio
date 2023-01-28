@@ -66,10 +66,10 @@ const Cafete = (): JSX.Element => {
     <Layout>
       {/* Pour le SEO on utilise Helmet, on peut y rajouter tout les tags du Head que l'on veut pour cette page spécifiquement */}
       <Helmet>
-        <title>Margot Chalmeton | Projet Cafete </title>
+        <title>Margot Chalmeton | Projet Cafêtes Mobiles</title>
         <meta
           name="description"
-          content="Vidéo de présentation de produit de la Montre ACHILLE XK1491IN2-15 de louis pion, réalisé par Ethan Piboyeux."
+          content="Aide à la fabrication de « Cafêtes Mobiles » café collectif de la Place des Fêtes Aubervilliers Paris"
         />
       </Helmet>
 
