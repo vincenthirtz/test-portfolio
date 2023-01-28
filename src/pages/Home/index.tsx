@@ -56,6 +56,17 @@ const Home = (): JSX.Element => {
               image: 'images/ACCESSOIRES ET DECORS/CAFETE/cafete-two.webp',
               alt: 'Construction à la Villa Mais D’Ici, Aubervillers',
             },
+            {
+              name: '',
+              year: 2022,
+              featuring: 'Vincent Gadras',
+              featuring2: 'Camille Boitel',
+              featuring3: `La compagnie L'immédiat`,
+              services: `Projet spectacle`,
+              link: 'fissure',
+              image: 'images/ACCESSOIRES ET DECORS/FISSURE/photo-rouge.webp',
+              alt: `Collecte d'objets anciens, fabrication d'accessoires, trucage, décors`,
+            },
           ]}
         />
 

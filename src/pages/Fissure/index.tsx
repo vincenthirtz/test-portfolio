@@ -1,13 +1,13 @@
 import { useEffect, useState } from 'react';
 import { Helmet } from 'react-helmet-async';
 import Layout from 'components/Layout';
-import styles from './Cafete.module.sass';
+import styles from './Fissure.module.sass';
 import Header from 'components/Header';
 import HeaderProject from 'components/HeaderProject';
 import LinkNextProject from 'components/LinkNextProject';
 import ModalImage from 'components/ModalImage';
 
-const Cafete = (): JSX.Element => {
+const Fissure = (): JSX.Element => {
   // Fonction pour être en haut de la page quand on arrive sur une page --> merci React.js
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -66,59 +66,53 @@ const Cafete = (): JSX.Element => {
     <Layout>
       {/* Pour le SEO on utilise Helmet, on peut y rajouter tout les tags du Head que l'on veut pour cette page spécifiquement */}
       <Helmet>
-        <title>Margot Chalmeton | Projet Cafêtes Mobiles</title>
+        <title>Margot Chalmeton | Projet spectacle de la Cie L'immédiat</title>
         <meta
           name="description"
-          content="Aide à la fabrication de « Cafêtes Mobiles » café collectif de la Place des Fêtes Aubervilliers Paris"
+          content="Collecte d'objets anciens, fabrication d'accessoires, trucage, décors"
         />
       </Helmet>
 
       <ModalImage image={imageModal} alt={altModal} display={displayModal} />
 
-      <Header url="/cafete" />
+      <Header url="/fissure" />
       <div className={styles.container}>
         <HeaderProject
-          title="Cafêtes Mobiles"
+          title="Projet spectacle de la Cie L'immédiat"
           index={1}
           titleLink=""
           link=""
-          year={2020}
+          year={2022}
           services={[
-            `Aide à la fabrication de « Cafêtes Mobiles » café collectif de la Place des Fêtes Aubervilliers Paris`,
-            'Crédits photo: Margot Chalmeton',
+            `Collecte d'objets anciens, fabrication d'accessoires, trucage, décors.`,
+            `Travail réalisé en collaboration avec Vincent GADRAS, L’immédiat, Guillaume BÉGUINOT et Margot CHALMETON, avec l’aide de Franck LIMON-DUPARCMEUR, Maxime BUROCHAIN, Sylvain GIRAUDEAU, Hervé VIEUSSE et Louise DIEBOLD. 
+            `,
           ]}
           elements={[
-            <a href="  https://www.mpdf.fr/le-cafete">Site de la place des fêtes</a>,
-            <a href="https://lecafete.wixsite.com/lecafete/post/les-cafêtes-mobiles-sont-arrivés-place-des-fêtes">
-              Article de la création
-            </a>,
+            <p> Crédit photos : Compagnie L’Immédiat</p>,
+            <a href="https://limmediat.com/le-poids-des-choses/">Site de la Cie L'immédiat</a>,
           ]}
         />
         <div className={styles.images__container}>
-          {/* <video
-            className={styles.animation__transform_top}
-            controls
-            controlsList="nodownload"
-            poster="images/louis-pion/louis-pion-ethan-piboyeux-miniature.jpg"
-          >
-            <source src="images/louis-pion/louis-pion-ethan-piboyeux.mp4" type="video/mp4" />
-          </video> */}
           <div className={`${styles.row} ${styles.animation__transform_top}`}>
-            <img src="images/ACCESSOIRES ET DECORS/CAFETE/cafete-two.webp" onClick={handleImage} />
+            <img src="images/ACCESSOIRES ET DECORS/FISSURE/plan-flou.webp" onClick={handleImage} />
             <img
-              src="images/ACCESSOIRES ET DECORS/CAFETE/cafete-yellow.webp"
+              src="images/ACCESSOIRES ET DECORS/FISSURE/photo-rouge.webp"
               onClick={handleImage}
             />
           </div>
           <div className={`${styles.row} ${styles.animation__transform_top}`}>
-            <img src="images/ACCESSOIRES ET DECORS/CAFETE/structure.webp" onClick={handleImage} />
-            <img src="images/ACCESSOIRES ET DECORS/CAFETE/deploye.jpg" onClick={handleImage} />
+            <img
+              src="images/ACCESSOIRES ET DECORS/FISSURE/photo-noir-blanc.webp"
+              onClick={handleImage}
+            />
+            <img src="images/ACCESSOIRES ET DECORS/FISSURE/focus.jpg" onClick={handleImage} />
           </div>
         </div>
 
         <div className={styles.footer__project}>
           <div className={styles.animation__background}>
-            <LinkNextProject text="Fissure" link="/fissure" />
+            <LinkNextProject text="A venir" link="/aude-bourgine" />
           </div>
         </div>
       </div>
@@ -126,4 +120,4 @@ const Cafete = (): JSX.Element => {
   );
 };
 
-export default Cafete;
+export default Fissure;

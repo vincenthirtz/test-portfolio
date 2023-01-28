@@ -5,6 +5,7 @@ import AllProjects from 'pages/AllProjects';
 import Contact from 'pages/Contact';
 import CoralEternal from 'pages/CoralEternal';
 import Cafete from 'pages/Cafete';
+import Fissure from 'pages/Fissure';
 import Services from 'pages/Services';
 import MentionsLegales from 'pages/MentionsLegales';
 import Error404 from 'pages/Error404';
@@ -24,6 +25,8 @@ const Router = (): JSX.Element => {
         <Route path="/aude-bourgine" element={<CoralEternal />} />
 
         <Route path="/cafete" element={<Cafete />} />
+
+        <Route path="/fissure" element={<Fissure />} />
 
         <Route path="/services" element={<Services />} />
 
