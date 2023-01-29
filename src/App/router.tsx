@@ -9,6 +9,7 @@ import Hybride from 'pages/Hybride';
 import Fissure from 'pages/Fissure';
 import Lpdc from 'pages/Lpdc';
 import Lcdo from 'pages/Lcdo';
+import Umdlf from 'pages/Umdlf';
 import Services from 'pages/Services';
 import MentionsLegales from 'pages/MentionsLegales';
 import Error404 from 'pages/Error404';
@@ -27,6 +28,7 @@ const Router = (): JSX.Element => {
         <Route path="/hybride" element={<Hybride />} />
         <Route path="/le-poids-des-choses" element={<Lpdc />} />
         <Route path="/la-constellation-de-lours" element={<Lcdo />} />
+        <Route path="/une-mort-dans-la-famille" element={<Umdlf />} />
         <Route path="/services" element={<Services />} />
         <Route path="/legal-notices" element={<MentionsLegales />} />
         <Route path="*" element={<Error404 />} />

@@ -72,4 +72,16 @@ export const projects = [
     alt: `Collecte d'objets anciens, fabrication d'accessoires, trucage, décors`,
     filter: 'accessoires&decors',
   },
+  {
+    name: '',
+    year: 2022,
+    featuring: '',
+    featuring2: 'Alexander Zeldin',
+    featuring3: `L’Odéon-Théâtre de l’Europe`,
+    services: `Projet Une mort dans la famille`,
+    link: 'une-mort-dans-la-famille',
+    image: 'images/ACCESSOIRES ET DECORS/UMDLF/photo2.webp',
+    alt: `Participation à la réalisation des accessoires de jeu et mobiliers.`,
+    filter: 'accessoires&decors',
+  },
 ];
