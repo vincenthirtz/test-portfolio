@@ -32,12 +32,11 @@ const MentionsLegales = (): JSX.Element => {
         <div className={styles.item}>
           <h2 className={styles.animation__background}>Activité</h2>
           <div className={styles.animation__transform_top}>
-            {/* <p>Numéro de Siret : 87853240 00015</p>
-            <p>Numéro de Siren : 87853240</p>
-            <p>Code APE : 6201 Z Programmation informatique</p>
-            <p>Micro-entrepreneur</p>
-            <p>Date de création : 01/01/2020</p>
-            <p>Forme juridique : Profession libérale</p> */}
+            <p>Numéro de Siret : 89981548400014</p>
+            <p>Numéro de Siren : 899815484</p>
+            <p>Code APE : Activités spécialisées de design (7410Z)</p>
+            <p>Entrepreneur individuel</p>
+            <p>Date de création : 29/05/2021</p>
           </div>
         </div>
         <div className={styles.item}>
