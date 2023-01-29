@@ -74,6 +74,18 @@ export const projects = [
   },
   {
     name: '',
+    year: 2021,
+    featuring: '',
+    featuring2: '',
+    featuring3: ``,
+    services: `Projet Défilé Albert de Mun`,
+    link: 'albert-de-mun',
+    image: 'images/ACCESSOIRES ET DECORS/MUN/photo1.webp',
+    alt: `Construction, préparation des chassis, patines`,
+    filter: 'accessoires&decors',
+  },
+  {
+    name: '',
     year: 2022,
     featuring: 'Vincent Gadras',
     featuring2: 'Camille Boitel',

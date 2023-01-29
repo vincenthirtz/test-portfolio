@@ -1,13 +1,13 @@
 import { useEffect, useState } from 'react';
 import { Helmet } from 'react-helmet-async';
 import Layout from 'components/Layout';
-import styles from './Parures.module.sass';
+import styles from './Mun.module.sass';
 import Header from 'components/Header';
 import HeaderProject from 'components/HeaderProject';
 import LinkNextProject from 'components/LinkNextProject';
 import ModalImage from 'components/ModalImage';
 
-const Parures = (): JSX.Element => {
+const Mun = (): JSX.Element => {
   // Fonction pour être en haut de la page quand on arrive sur une page --> merci React.js
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -66,64 +66,43 @@ const Parures = (): JSX.Element => {
     <Layout>
       {/* Pour le SEO on utilise Helmet, on peut y rajouter tout les tags du Head que l'on veut pour cette page spécifiquement */}
       <Helmet>
-        <title>Margot Chalmeton | Projet Parures, objets d'art à porter</title>
-        <meta
-          name="description"
-          content={`Création de deux pièces pour l'exposition Parures, objets d'art à porter conçue par Isabelle Quéhé.`}
-        />
+        <title>Margot Chalmeton | Projet Défilé Albert de Mun</title>
+        <meta name="description" content={`Construction, préparation des chassis, patines.`} />
       </Helmet>
 
       <ModalImage image={imageModal} alt={altModal} display={displayModal} />
 
-      <Header url="/parures" />
+      <Header url="/albert-de-mun" />
       <div className={styles.container}>
         <HeaderProject
-          title="Projet Parures, objets d'art à porter"
+          title="Projet Défilé Albert de Mun"
           index={1}
           titleLink=""
           link=""
-          year={2019}
-          services={[
-            `Création de deux pièces pour l'exposition Parures, objets d'art à porter conçue par Isabelle Quéhé.`,
-          ]}
+          year={2021}
+          services={[`Construction, préparation des chassis, patines.`]}
           elements={[
             <span>
-              Pièces retenues par un jury de professionnels, exposées puis mises aux enchères.
-              Fabriquées à partir d'un vêtement et de matériaux recyclés. Techniques et savoir-faire
-              issus des arts textile. Broderie, couture, appliqués, découpe-laser.
+              Participation au décor pour le Défilé Albert de Mun - Théatre du Chatelêt 2021
             </span>,
-            <span>Modèle : Samuel Brioul</span>,
-            <span>Crédit photo: Margot Chalmeton</span>,
-            <a href="http://daac.ac-lille.fr/actualites/arts-appliques/jusquau-28-oct-2019-exposition-parures-objets-dart-a-porter-a-la-manufacture-de-roubaix/jigsaw-lamanufacture-parures-dossierdepresse-juin2019-compresse.pdf/view">
-              Article
-            </a>,
+            <span>Construction, préparation des chassis, patines. </span>,
+            <span>Crédit photo : A. Bottard, M.Chalmeton</span>,
           ]}
         />
         <div className={styles.images__container}>
           <div className={`${styles.row} ${styles.animation__transform_top}`}>
-            <img src="images/ACCESSOIRES ET DECORS/PARURES/affiche.webp" onClick={handleImage} />
-            <img
-              src="images/ACCESSOIRES ET DECORS/PARURES/explications.webp"
-              onClick={handleImage}
-            />
+            <img src="images/ACCESSOIRES ET DECORS/MUN/photo1.webp" onClick={handleImage} />
+            <img src="images/ACCESSOIRES ET DECORS/MUN/photo2.webp" onClick={handleImage} />
           </div>
           <div className={`${styles.row} ${styles.animation__transform_top}`}>
-            <img src="images/ACCESSOIRES ET DECORS/PARURES/photo1.webp" onClick={handleImage} />
-            <img src="images/ACCESSOIRES ET DECORS/PARURES/photo2.webp" onClick={handleImage} />
-          </div>
-          <div className={`${styles.row} ${styles.animation__transform_top}`}>
-            <img src="images/ACCESSOIRES ET DECORS/PARURES/photo3.webp" onClick={handleImage} />
-            v<img src="images/ACCESSOIRES ET DECORS/PARURES/photo4.webp" onClick={handleImage} />
-          </div>
-          <div className={`${styles.row} ${styles.animation__transform_top}`}>
-            <img src="images/ACCESSOIRES ET DECORS/PARURES/photo5.webp" onClick={handleImage} />
-            v<img src="images/ACCESSOIRES ET DECORS/PARURES/photo6.webp" onClick={handleImage} />
+            <img src="images/ACCESSOIRES ET DECORS/MUN/photo3.webp" onClick={handleImage} />
+            <img src="images/ACCESSOIRES ET DECORS/MUN/photo4.webp" onClick={handleImage} />
           </div>
         </div>
 
         <div className={styles.footer__project}>
           <div className={styles.animation__background}>
-            <LinkNextProject text="Projet Défilé Albert de Mun" link="/albert-de-mun" />
+            <LinkNextProject text="A venir" link="/fissure" />
           </div>
         </div>
       </div>
@@ -131,4 +110,4 @@ const Parures = (): JSX.Element => {
   );
 };
 
-export default Parures;
+export default Mun;
