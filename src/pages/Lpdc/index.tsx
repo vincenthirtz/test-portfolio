@@ -78,7 +78,7 @@ const Lpdc = (): JSX.Element => {
       <Header url="/lpdc" />
       <div className={styles.container}>
         <HeaderProject
-          title="Projet Hybride"
+          title="Projet Le poids des choses"
           index={1}
           titleLink=""
           link=""
