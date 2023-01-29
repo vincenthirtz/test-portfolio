@@ -47,6 +47,17 @@ const Home = (): JSX.Element => {
             },
             {
               name: '',
+              year: 2019,
+              featuring: '',
+              featuring2: '',
+              featuring3: '',
+              services: `Projet Hybride`,
+              link: 'hybride',
+              image: 'images/ACCESSOIRES ET DECORS/HYBRIDE/face.webp',
+              alt: `A l'occasion des 500 ans de la mort de Léonard de Vinci. Pièce inspirée de son oeuvre et de ses recherches sur l'eau, le vol des oiseaux, l'anatomie, le dessin...`,
+            },
+            {
+              name: '',
               year: 2020,
               featuring: 'Frank Oettgen',
               featuring2: 'Laura Reboul',

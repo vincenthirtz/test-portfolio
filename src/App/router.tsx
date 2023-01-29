@@ -5,6 +5,7 @@ import AllProjects from 'pages/AllProjects';
 import Contact from 'pages/Contact';
 import CoralEternal from 'pages/CoralEternal';
 import Cafete from 'pages/Cafete';
+import Hybride from 'pages/Hybride';
 import Fissure from 'pages/Fissure';
 import Services from 'pages/Services';
 import MentionsLegales from 'pages/MentionsLegales';
@@ -15,23 +16,15 @@ const Router = (): JSX.Element => {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home />} />
-
         <Route path="/about" element={<About />} />
-
         <Route path="/all-projects" element={<AllProjects />} />
-
         <Route path="/contact" element={<Contact />} />
-
         <Route path="/aude-bourgine" element={<CoralEternal />} />
-
         <Route path="/cafete" element={<Cafete />} />
-
         <Route path="/fissure" element={<Fissure />} />
-
+        <Route path="/hybride" element={<Hybride />} />
         <Route path="/services" element={<Services />} />
-
         <Route path="/legal-notices" element={<MentionsLegales />} />
-
         <Route path="*" element={<Error404 />} />
       </Routes>
     </BrowserRouter>

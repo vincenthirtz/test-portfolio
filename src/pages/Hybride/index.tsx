@@ -1,13 +1,13 @@
 import { useEffect, useState } from 'react';
 import { Helmet } from 'react-helmet-async';
 import Layout from 'components/Layout';
-import styles from './Fissure.module.sass';
+import styles from './Hybride.module.sass';
 import Header from 'components/Header';
 import HeaderProject from 'components/HeaderProject';
 import LinkNextProject from 'components/LinkNextProject';
 import ModalImage from 'components/ModalImage';
 
-const Fissure = (): JSX.Element => {
+const Hybride = (): JSX.Element => {
   // Fonction pour être en haut de la page quand on arrive sur une page --> merci React.js
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -66,53 +66,53 @@ const Fissure = (): JSX.Element => {
     <Layout>
       {/* Pour le SEO on utilise Helmet, on peut y rajouter tout les tags du Head que l'on veut pour cette page spécifiquement */}
       <Helmet>
-        <title>Margot Chalmeton | Projet spectacle de la Cie L'immédiat</title>
+        <title>Margot Chalmeton | Projet Hybride</title>
         <meta
           name="description"
-          content="Collecte d'objets anciens, fabrication d'accessoires, trucage, décors"
+          content="A l'occasion des 500 ans de la mort de Léonard de Vinci. Pièce inspirée de son oeuvre et de ses recherches sur l'eau, le vol des oiseaux, l'anatomie, le dessin..."
         />
       </Helmet>
 
       <ModalImage image={imageModal} alt={altModal} display={displayModal} />
 
-      <Header url="/fissure" />
+      <Header url="/hybride" />
       <div className={styles.container}>
         <HeaderProject
-          title="Projet spectacle de la Cie L'immédiat"
+          title="Projet Hybride"
           index={1}
           titleLink=""
           link=""
-          year={2022}
-          services={[
-            `Collecte d'objets anciens, fabrication d'accessoires, trucage, décors.`,
-            `Travail réalisé en collaboration avec Vincent GADRAS, L’immédiat, Guillaume BÉGUINOT et Margot CHALMETON, avec l’aide de Franck LIMON-DUPARCMEUR, Maxime BUROCHAIN, Sylvain GIRAUDEAU, Hervé VIEUSSE et Louise DIEBOLD. 
-            `,
-          ]}
+          year={2019}
+          services={[`A l'occasion des 500 ans de la mort de Léonard de Vinci.`]}
           elements={[
-            <p> Crédit photos : Compagnie L’Immédiat</p>,
-            <a href="https://limmediat.com/le-poids-des-choses/">Site de la Cie L'immédiat</a>,
+            <span>
+              Pièce inspirée de son oeuvre et de ses recherches sur l'eau, le vol des oiseaux,
+              l'anatomie, le dessin...
+            </span>,
+            <p> Crédit photos : Margot Chalmeton</p>,
           ]}
         />
         <div className={styles.images__container}>
+          <video
+            className={styles.animation__transform_top}
+            controls
+            controlsList="nodownload"
+            poster="images/ACCESSOIRES ET DECORS/HYBRIDE/face.webp"
+          >
+            <source src="images/ACCESSOIRES ET DECORS/HYBRIDE/video.MP4" type="video/mp4" />
+          </video>
           <div className={`${styles.row} ${styles.animation__transform_top}`}>
-            <img src="images/ACCESSOIRES ET DECORS/FISSURE/plan-flou.webp" onClick={handleImage} />
-            <img
-              src="images/ACCESSOIRES ET DECORS/FISSURE/photo-rouge.webp"
-              onClick={handleImage}
-            />
+            <img src="images/ACCESSOIRES ET DECORS/HYBRIDE/face.webp" onClick={handleImage} />
+            <img src="images/ACCESSOIRES ET DECORS/HYBRIDE/profil.webp" onClick={handleImage} />
           </div>
           <div className={`${styles.row} ${styles.animation__transform_top}`}>
-            <img
-              src="images/ACCESSOIRES ET DECORS/FISSURE/photo-noir-blanc.webp"
-              onClick={handleImage}
-            />
-            <img src="images/ACCESSOIRES ET DECORS/FISSURE/focus.jpg" onClick={handleImage} />
+            <img src="images/ACCESSOIRES ET DECORS/HYBRIDE/haut.webp" onClick={handleImage} />
           </div>
         </div>
 
         <div className={styles.footer__project}>
           <div className={styles.animation__background}>
-            <LinkNextProject text="Projet Hybride" link="/hybride" />
+            <LinkNextProject text="A venir" link="/aude-bourgine" />
           </div>
         </div>
       </div>
@@ -120,4 +120,4 @@ const Fissure = (): JSX.Element => {
   );
 };
 
-export default Fissure;
+export default Hybride;
