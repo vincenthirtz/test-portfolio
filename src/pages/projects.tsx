@@ -25,6 +25,18 @@ export const projects = [
   },
   {
     name: '',
+    year: 2019,
+    featuring: '',
+    featuring2: '',
+    featuring3: 'Isabelle Quéhé',
+    services: `Projet Parures, objets d'art à porter`,
+    link: 'parures',
+    image: 'images/ACCESSOIRES ET DECORS/PARURES/affiche.webp',
+    alt: `Création de deux pièces pour l'exposition "Parures, objets d'art à porter" conçue par Isabelle Quéhé.`,
+    filter: 'accessoires&decors',
+  },
+  {
+    name: '',
     year: 2020,
     featuring: 'Frank Oettgen',
     featuring2: 'Laura Reboul',

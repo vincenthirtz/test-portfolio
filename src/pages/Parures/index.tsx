@@ -1,13 +1,13 @@
 import { useEffect, useState } from 'react';
 import { Helmet } from 'react-helmet-async';
 import Layout from 'components/Layout';
-import styles from './Umdlf.module.sass';
+import styles from './Parures.module.sass';
 import Header from 'components/Header';
 import HeaderProject from 'components/HeaderProject';
 import LinkNextProject from 'components/LinkNextProject';
 import ModalImage from 'components/ModalImage';
 
-const Umdlf = (): JSX.Element => {
+const Parures = (): JSX.Element => {
   // Fonction pour être en haut de la page quand on arrive sur une page --> merci React.js
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -66,55 +66,64 @@ const Umdlf = (): JSX.Element => {
     <Layout>
       {/* Pour le SEO on utilise Helmet, on peut y rajouter tout les tags du Head que l'on veut pour cette page spécifiquement */}
       <Helmet>
-        <title>Margot Chalmeton | Projet Une mort dans la famille</title>
+        <title>Margot Chalmeton | Projet Parures, objets d'art à porter</title>
         <meta
           name="description"
-          content="Participation à la réalisation des accessoires de jeu et mobiliers."
+          content={`Création de deux pièces pour l'exposition Parures, objets d'art à porter conçue par Isabelle Quéhé.`}
         />
       </Helmet>
 
       <ModalImage image={imageModal} alt={altModal} display={displayModal} />
 
-      <Header url="/une-mort-dans-la-famille" />
+      <Header url="/parures" />
       <div className={styles.container}>
         <HeaderProject
-          title="Projet Une mort dans la famille"
+          title="Projet Parures, objets d'art à porter"
           index={1}
           titleLink=""
           link=""
-          year={2021}
-          services={[`Participation à la réalisation des accessoires de jeu et mobiliers.`]}
+          year={2019}
+          services={[
+            `Création de deux pièces pour l'exposition Parures, objets d'art à porter conçue par Isabelle Quéhé.`,
+          ]}
           elements={[
             <span>
-              Texte et mise en scène Alexander Zeldin, artiste associé création, réalisation du
-              décor Atelier de construction de l’Odéon-Théâtre de l’Europe, du 4 au 20 février 2022,
-              Berthier 17ème Participation à la réalisation des accessoires de jeu et mobiliers.
+              Pièces retenues par un jury de professionnels, exposées puis mises aux enchères.
+              Fabriquées à partir d'un vêtement et de matériaux recyclés. Techniques et savoir-faire
+              issus des arts textile. Broderie, couture, appliqués, découpe-laser.
             </span>,
-            <span>
-              Crédit photos : Une mort dans la famille - Photos de répétitions © Simon Gosselin
-            </span>,
-            <a href="https://www.theatre-odeon.eu/fr/saison-2021-2022/spectacles-21-22/une_mort_dans_la_famille_2122">
-              Article du site du Théâtre de l’Europe, l’Odéon
+            <span>Modèle : Samuel Brioul</span>,
+            <span>Crédit photo: Margot Chalmeton</span>,
+            <a href="http://daac.ac-lille.fr/actualites/arts-appliques/jusquau-28-oct-2019-exposition-parures-objets-dart-a-porter-a-la-manufacture-de-roubaix/jigsaw-lamanufacture-parures-dossierdepresse-juin2019-compresse.pdf/view">
+              Article
             </a>,
           ]}
         />
         <div className={styles.images__container}>
           <div className={`${styles.row} ${styles.animation__transform_top}`}>
-            <img src="images/ACCESSOIRES ET DECORS/UMDLF/photo1.webp" onClick={handleImage} />
-            <img src="images/ACCESSOIRES ET DECORS/UMDLF/photo2.webp" onClick={handleImage} />
+            <img src="images/ACCESSOIRES ET DECORS/PARURES/affiche.webp" onClick={handleImage} />
+            <img
+              src="images/ACCESSOIRES ET DECORS/PARURES/explications.webp"
+              onClick={handleImage}
+            />
           </div>
           <div className={`${styles.row} ${styles.animation__transform_top}`}>
-            <img src="images/ACCESSOIRES ET DECORS/UMDLF/photo3.webp" onClick={handleImage} />
-            <img src="images/ACCESSOIRES ET DECORS/UMDLF/photo4.webp" onClick={handleImage} />
+            <img src="images/ACCESSOIRES ET DECORS/PARURES/photo1.webp" onClick={handleImage} />
+            <img src="images/ACCESSOIRES ET DECORS/PARURES/photo2.webp" onClick={handleImage} />
           </div>
           <div className={`${styles.row} ${styles.animation__transform_top}`}>
-            <img src="images/ACCESSOIRES ET DECORS/UMDLF/photo5.webp" onClick={handleImage} />
+            <img src="images/ACCESSOIRES ET DECORS/PARURES/photo3.webp" onClick={handleImage} />
+            v<img src="images/ACCESSOIRES ET DECORS/PARURES/photo4.webp" onClick={handleImage} />
+          </div>
+          <div className={`${styles.row} ${styles.animation__transform_top}`}>
+            <img src="images/ACCESSOIRES ET DECORS/PARURES/photo5.webp" onClick={handleImage} />
+            v<img src="images/ACCESSOIRES ET DECORS/PARURES/photo6.webp" onClick={handleImage} />
           </div>
         </div>
 
         <div className={styles.footer__project}>
           <div className={styles.animation__background}>
-            <LinkNextProject text="Projet Parures, objets d'art à porter" link="/parures" />
+            <LinkNextProject text="A venir" link="/fissure" />
           </div>
         </div>
       </div>
@@ -122,4 +131,4 @@ const Umdlf = (): JSX.Element => {
   );
 };
 
-export default Umdlf;
+export default Parures;
