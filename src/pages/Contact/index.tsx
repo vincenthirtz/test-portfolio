@@ -21,11 +21,13 @@ const Contact = (): JSX.Element => {
 
       <Header url="/contact" />
       <div className={styles.container}>
-        <p className={`${styles.contact__link} ${styles.animation__background}`}>
-          margotchalmeton (@) gmail.com
-        </p>
+        <a href="mailto:margotchalmeton@gmail.com">
+          <p className={`${styles.contact__link} ${styles.animation__background}`}>
+            margotchalmeton (@) gmail.com
+          </p>
+        </a>
       </div>
-      <Footer allProjectsDisplay={false} />
+      <Footer allProjectsDisplay={true} />
     </Layout>
   );
 };

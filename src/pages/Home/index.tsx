@@ -5,6 +5,7 @@ import styles from './Home.module.sass';
 import Header from 'components/Header';
 import Footer from 'components/Footer';
 import ProjectHomePage from 'components/ProjectHomePage';
+import { projects } from 'pages/projects';
 
 const Home = (): JSX.Element => {
   const [displayMouse, setDisplayMouse] = useState(true);
@@ -14,14 +15,12 @@ const Home = (): JSX.Element => {
     setDisplayMouse(false);
   }, 3000 + 6000); // 3000 c'est le temps avant l'apparition, puis on ajoute le temps qu'il faut avant de le faire disparaître
 
-  // Fonction pour être en haut de la page quand on arrive sur une page --> merci React.js
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
 
   return (
     <Layout>
-      {/* Pour le SEO on utilise Helmet, on peut y rajouter tout les tags du Head que l'on veut pour cette page spécifiquement */}
       <Helmet>
         <title>Margot Chalmeton | Portfolio</title>
         <meta
@@ -32,65 +31,7 @@ const Home = (): JSX.Element => {
 
       <Header url="." />
       <div className={styles.container}>
-        <ProjectHomePage
-          projects={[
-            {
-              name: '',
-              year: 2019,
-              featuring: 'Aude Bourgine',
-              featuring2: '',
-              featuring3: '',
-              services: `Projet vitrines Coral Eternal`,
-              link: 'aude-bourgine',
-              image: 'images/ACCESSOIRES ET DECORS/AUDE BOURGINE 2019/hermes-rouge.webp',
-              alt: 'Aide à la fabrication de l’oeuvre « Coral Eternal » de l’artiste Aude Bourgine',
-            },
-            {
-              name: '',
-              year: 2019,
-              featuring: '',
-              featuring2: '',
-              featuring3: '',
-              services: `Projet Hybride`,
-              link: 'hybride',
-              image: 'images/ACCESSOIRES ET DECORS/HYBRIDE/face.webp',
-              alt: `A l'occasion des 500 ans de la mort de Léonard de Vinci. Pièce inspirée de son oeuvre et de ses recherches sur l'eau, le vol des oiseaux, l'anatomie, le dessin...`,
-            },
-            {
-              name: '',
-              year: 2020,
-              featuring: 'Frank Oettgen',
-              featuring2: 'Laura Reboul',
-              featuring3: 'La compagnie Les Grandes Personnes',
-              services: `Projet Cafêtes Mobiles`,
-              link: 'cafete',
-              image: 'images/ACCESSOIRES ET DECORS/CAFETE/cafete-two.webp',
-              alt: 'Construction à la Villa Mais D’Ici, Aubervillers',
-            },
-            {
-              name: '',
-              year: 2021,
-              featuring: 'Alain Burkarth & Guillaume Béguinot',
-              featuring2: 'Camille Boitel',
-              featuring3: `La compagnie L'immédiat`,
-              services: `Projet Le Poids des choses`,
-              link: 'lpdc',
-              image: 'images/ACCESSOIRES ET DECORS/LPDC/photo1.webp',
-              alt: `Collecte d'objets anciens, fabrication d'accessoires, trucage`,
-            },
-            {
-              name: '',
-              year: 2022,
-              featuring: 'Vincent Gadras',
-              featuring2: 'Camille Boitel',
-              featuring3: `La compagnie L'immédiat`,
-              services: `Projet spectacle`,
-              link: 'fissure',
-              image: 'images/ACCESSOIRES ET DECORS/FISSURE/photo-rouge.webp',
-              alt: `Collecte d'objets anciens, fabrication d'accessoires, trucage, décors`,
-            },
-          ]}
-        />
+        <ProjectHomePage projects={projects} />
 
         <div className={`${styles.mouse__container} ${styles.animation__opacity}`}>
           <div className={`${styles.mouse} ${displayMouse ? '' : styles.hidden}`}></div>

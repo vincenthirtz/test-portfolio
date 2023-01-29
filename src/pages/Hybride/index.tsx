@@ -112,7 +112,7 @@ const Hybride = (): JSX.Element => {
 
         <div className={styles.footer__project}>
           <div className={styles.animation__background}>
-            <LinkNextProject text="Projet Le poids des choses" link="/lpdc" />
+            <LinkNextProject text="Projet Le poids des choses" link="/le-poids-des-choses" />
           </div>
         </div>
       </div>

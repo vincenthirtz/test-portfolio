@@ -75,7 +75,7 @@ const Lpdc = (): JSX.Element => {
 
       <ModalImage image={imageModal} alt={altModal} display={displayModal} />
 
-      <Header url="/lpdc" />
+      <Header url="/le-poids-des-choses" />
       <div className={styles.container}>
         <HeaderProject
           title="Projet Le poids des choses"
@@ -111,7 +111,10 @@ const Lpdc = (): JSX.Element => {
 
         <div className={styles.footer__project}>
           <div className={styles.animation__background}>
-            <LinkNextProject text="A venir" link="/fissure" />
+            <LinkNextProject
+              text="Projet La Constellation de l'Ours"
+              link="/la-constellation-de-lours"
+            />
           </div>
         </div>
       </div>

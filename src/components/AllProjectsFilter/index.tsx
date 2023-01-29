@@ -18,7 +18,7 @@ const AllProjectsFilter = (props: AllProjectsFilterType): JSX.Element => {
           // On met la classe indiqué dans la props et on met la classe active que si le filtre considère ce projet ou si on ne filtre pas --> tous les projets
           <div
             key={index}
-            className={`${project.class} ${styles.project__item} ${
+            className={`${styles.poster} ${styles.project__item} ${
               project.filter == filter ? styles.active : ''
             } ${filter == 'all-projects' ? styles.active : ''}`}
           >
