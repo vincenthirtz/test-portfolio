@@ -69,6 +69,17 @@ const Home = (): JSX.Element => {
             },
             {
               name: '',
+              year: 2021,
+              featuring: 'Alain Burkarth & Guillaume Béguinot',
+              featuring2: 'Camille Boitel',
+              featuring3: `La compagnie L'immédiat`,
+              services: `Projet Le Poids des choses`,
+              link: 'lpdc',
+              image: 'images/ACCESSOIRES ET DECORS/LPDC/photo1.webp',
+              alt: `Collecte d'objets anciens, fabrication d'accessoires, trucage`,
+            },
+            {
+              name: '',
               year: 2022,
               featuring: 'Vincent Gadras',
               featuring2: 'Camille Boitel',

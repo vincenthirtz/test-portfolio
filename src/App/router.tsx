@@ -7,6 +7,7 @@ import CoralEternal from 'pages/CoralEternal';
 import Cafete from 'pages/Cafete';
 import Hybride from 'pages/Hybride';
 import Fissure from 'pages/Fissure';
+import Lpdc from 'pages/Lpdc';
 import Services from 'pages/Services';
 import MentionsLegales from 'pages/MentionsLegales';
 import Error404 from 'pages/Error404';
@@ -23,6 +24,7 @@ const Router = (): JSX.Element => {
         <Route path="/cafete" element={<Cafete />} />
         <Route path="/fissure" element={<Fissure />} />
         <Route path="/hybride" element={<Hybride />} />
+        <Route path="/lpdc" element={<Lpdc />} />
         <Route path="/services" element={<Services />} />
         <Route path="/legal-notices" element={<MentionsLegales />} />
         <Route path="*" element={<Error404 />} />

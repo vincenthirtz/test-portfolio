@@ -1,13 +1,13 @@
 import { useEffect, useState } from 'react';
 import { Helmet } from 'react-helmet-async';
 import Layout from 'components/Layout';
-import styles from './Hybride.module.sass';
+import styles from './Lpdc.module.sass';
 import Header from 'components/Header';
 import HeaderProject from 'components/HeaderProject';
 import LinkNextProject from 'components/LinkNextProject';
 import ModalImage from 'components/ModalImage';
 
-const Hybride = (): JSX.Element => {
+const Lpdc = (): JSX.Element => {
   // Fonction pour être en haut de la page quand on arrive sur une page --> merci React.js
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -66,53 +66,48 @@ const Hybride = (): JSX.Element => {
     <Layout>
       {/* Pour le SEO on utilise Helmet, on peut y rajouter tout les tags du Head que l'on veut pour cette page spécifiquement */}
       <Helmet>
-        <title>Margot Chalmeton | Projet Hybride</title>
+        <title>Margot Chalmeton | Projet Le poids des choses</title>
         <meta
           name="description"
-          content="A l'occasion des 500 ans de la mort de Léonard de Vinci. Pièce inspirée de son oeuvre et de ses recherches sur l'eau, le vol des oiseaux, l'anatomie, le dessin..."
+          content="Collecte d'objets anciens, fabrication d'accessoires, trucage. Travail réalisé en collaboration avec Alain Burkarth & Guillaume Béguinot"
         />
       </Helmet>
 
       <ModalImage image={imageModal} alt={altModal} display={displayModal} />
 
-      <Header url="/hybride" />
+      <Header url="/lpdc" />
       <div className={styles.container}>
         <HeaderProject
           title="Projet Hybride"
           index={1}
           titleLink=""
           link=""
-          year={2019}
-          services={[`A l'occasion des 500 ans de la mort de Léonard de Vinci.`]}
+          year={2021}
+          services={[
+            `Collecte d'objets anciens, fabrication d'accessoires, trucage. Travail réalisé en collaboration avec Alain Burkarth & Guillaume Béguinot`,
+          ]}
           elements={[
-            <span>
-              Pièce inspirée de son oeuvre et de ses recherches sur l'eau, le vol des oiseaux,
-              l'anatomie, le dessin...
-            </span>,
-            <p> Crédit photos : Margot Chalmeton</p>,
+            <p> Crédit photos : Le Canal - Théâtre du Pays de Redon, I.Jouvante, 35600</p>,
           ]}
         />
         <div className={styles.images__container}>
-          <video
-            className={styles.animation__transform_top}
-            controls
-            controlsList="nodownload"
-            poster="images/ACCESSOIRES ET DECORS/HYBRIDE/face.webp"
-          >
-            <source src="images/ACCESSOIRES ET DECORS/HYBRIDE/video.MP4" type="video/mp4" />
-          </video>
           <div className={`${styles.row} ${styles.animation__transform_top}`}>
-            <img src="images/ACCESSOIRES ET DECORS/HYBRIDE/face.webp" onClick={handleImage} />
-            <img src="images/ACCESSOIRES ET DECORS/HYBRIDE/profil.webp" onClick={handleImage} />
+            <img src="images/ACCESSOIRES ET DECORS/LPDC/photo1.webp" onClick={handleImage} />
+            <img src="images/ACCESSOIRES ET DECORS/LPDC/photo2.webp" onClick={handleImage} />
           </div>
           <div className={`${styles.row} ${styles.animation__transform_top}`}>
-            <img src="images/ACCESSOIRES ET DECORS/HYBRIDE/haut.webp" onClick={handleImage} />
+            <img src="images/ACCESSOIRES ET DECORS/LPDC/photo3.webp" onClick={handleImage} />
+            <img src="images/ACCESSOIRES ET DECORS/LPDC/photo4.webp" onClick={handleImage} />
+          </div>
+          <div className={`${styles.row} ${styles.animation__transform_top}`}>
+            <img src="images/ACCESSOIRES ET DECORS/LPDC/photo5.webp" onClick={handleImage} />
+            <img src="images/ACCESSOIRES ET DECORS/LPDC/photo6.webp" onClick={handleImage} />
           </div>
         </div>
 
         <div className={styles.footer__project}>
           <div className={styles.animation__background}>
-            <LinkNextProject text="Projet Le poids des choses" link="/lpdc" />
+            <LinkNextProject text="A venir" link="/fissure" />
           </div>
         </div>
       </div>
@@ -120,4 +115,4 @@ const Hybride = (): JSX.Element => {
   );
 };
 
-export default Hybride;
+export default Lpdc;
