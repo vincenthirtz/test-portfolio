@@ -95,14 +95,6 @@ const CoralEternal = (): JSX.Element => {
           ]}
         />
         <div className={styles.images__container}>
-          {/* <video
-            className={styles.animation__transform_top}
-            controls
-            controlsList="nodownload"
-            poster="images/louis-pion/louis-pion-ethan-piboyeux-miniature.jpg"
-          >
-            <source src="images/louis-pion/louis-pion-ethan-piboyeux.mp4" type="video/mp4" />
-          </video> */}
           <div className={`${styles.row} ${styles.animation__transform_top}`}>
             <img
               src="images/ACCESSOIRES ET DECORS/AUDE BOURGINE 2019/hermes-rouge.webp"

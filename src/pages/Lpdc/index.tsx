@@ -84,10 +84,14 @@ const Lpdc = (): JSX.Element => {
           link=""
           year={2021}
           services={[
-            `Collecte d'objets anciens, fabrication d'accessoires, trucage. Travail réalisé en collaboration avec Alain Burkarth & Guillaume Béguinot`,
+            `Collecte d'objets anciens, fabrication d'accessoires, trucage. Travail réalisé en collaboration avec Alain Burkarth & Guillaume Béguinot`,
           ]}
           elements={[
-            <p> Crédit photos : Le Canal - Théâtre du Pays de Redon, I.Jouvante, 35600</p>,
+            <span> Crédit photos : Le Canal - Théâtre du Pays de Redon, I.Jouvante, 35600</span>,
+            <a href="https://limmediat.com/le-poids-des-choses/">Site de la Compagnie</a>,
+            <a href="https://www.lecanaltheatre.fr/spectacle-20202021-le-poids-des-choses">
+              Article de Le Canal - Théâtre du Pays de Redon
+            </a>,
           ]}
         />
         <div className={styles.images__container}>
