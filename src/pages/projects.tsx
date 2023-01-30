@@ -126,7 +126,7 @@ export const projects = [
     featuring: 'Lola Legouest & Maroussia Klein',
     featuring2: 'Louise Robichon',
     featuring3: `Les Plastiqueurs`,
-    services: `Projet Tête de marionnette géante "Saint-Gorgon" 2022`,
+    services: `Projet Tête de marionnette géante "Saint-Gorgon"`,
     link: 'saint-gorgon-2022',
     image: 'images/ACCESSOIRES ET DECORS/MARIONNETTE2/photo1.webp',
     alt: `Dessin, sculpture, moulage, décoration, création costume en collaboration avec Louise Robichon, Lola Legouest, Maroussia Klein.`,
