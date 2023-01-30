@@ -127,7 +127,7 @@ const Saintgorgon2022 = (): JSX.Element => {
 
         <div className={styles.footer__project}>
           <div className={styles.animation__background}>
-            <LinkNextProject text="A venir" link="/fissure" />
+            <LinkNextProject text="Projet Rush Festival 2022" link="/rush-festival-2022" />
           </div>
         </div>
       </div>
