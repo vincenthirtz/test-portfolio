@@ -12,6 +12,8 @@ import Lcdo from 'pages/Lcdo';
 import Umdlf from 'pages/Umdlf';
 import Parures from 'pages/Parures';
 import Mun from 'pages/Mun';
+import Saintgorgon from 'pages/Saintgorgon';
+import Saintgorgon2022 from 'pages/Saintgorgon2022';
 import Services from 'pages/Services';
 import MentionsLegales from 'pages/MentionsLegales';
 import Error404 from 'pages/Error404';
@@ -33,6 +35,8 @@ const Router = (): JSX.Element => {
         <Route path="/une-mort-dans-la-famille" element={<Umdlf />} />
         <Route path="/parures" element={<Parures />} />
         <Route path="/albert-de-mun" element={<Mun />} />
+        <Route path="/saint-gorgon" element={<Saintgorgon />} />
+        <Route path="/saint-gorgon-2022" element={<Saintgorgon2022 />} />
         <Route path="/services" element={<Services />} />
         <Route path="/legal-notices" element={<MentionsLegales />} />
         <Route path="*" element={<Error404 />} />
