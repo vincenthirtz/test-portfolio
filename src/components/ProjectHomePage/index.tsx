@@ -1,6 +1,8 @@
 import { useState, useEffect } from 'react';
 import styles from './ProjectHomePage.module.sass';
 import { NavLink } from 'react-router-dom';
+import ArrowUp from 'icons/ArrowUp';
+import ArrowDown from 'icons/ArrowDown';
 
 type PropsType = {
   projects: ProjectType[];
@@ -103,68 +105,81 @@ const ProjectHomePage = (props: PropsType): JSX.Element => {
               actualProject == index ? styles.active : ''
             }`}
           >
-            <NavLink to={project.link}>
-              <div className={styles.project__item}>
-                <div className={styles.project__title}>
-                  <NavLink to={project.link} className={styles.project__link}>
-                    <h2 className={styles.animation__background}>{project.name}</h2>
-                  </NavLink>
-                  <div className={styles.index__project}>
-                    <span>
-                      <div className={styles.animation__width}></div>
-                    </span>
-                    <p className={styles.animation__transform_top_small}>{'0' + (index + 1)}</p>
-                  </div>
+            <div className={styles.project__item}>
+              <div className={styles.project__title}>
+                <NavLink to={project.link} className={styles.project__link}>
+                  <h2 className={styles.animation__background}>{project.name}</h2>
+                </NavLink>
+                <div className={styles.index__project}>
+                  <span>
+                    <div className={styles.animation__width}></div>
+                  </span>
+                  <p className={styles.animation__transform_top_small}>{'0' + (index + 1)}</p>
                 </div>
-                <div className={styles.item__container}>
-                  <div className={styles.left__container}>
-                    <div className={styles.services__container}>
-                      <p
-                        className={`${styles.project__services} ${styles.animation__transform_top_small}`}
-                      >
-                        {project.services}
-                      </p>
-                      <p
-                        className={`${styles.project__services} ${styles.animation__transform_top_small}`}
-                      >
-                        {project.featuring}
-                      </p>
-                      <p
-                        className={`${styles.project__services} ${styles.animation__transform_top_small}`}
-                      >
-                        {project.featuring2}
-                      </p>
-                      <p
-                        className={`${styles.project__services} ${styles.animation__transform_top_small}`}
-                      >
-                        {project.featuring3}
-                      </p>
-                      <p
-                        className={`${styles.project__year} ${styles.animation__transform_top_small}`}
-                      >
-                        {project.year}
-                      </p>
-                    </div>
-                    <span className={styles.container__image}>
+              </div>
+              <div className={styles.item__container}>
+                <div className={styles.left__container}>
+                  <div className={styles.services__container}>
+                    <p
+                      className={`${styles.project__services} ${styles.animation__transform_top_small}`}
+                    >
+                      {project.services}
+                    </p>
+                    <p
+                      className={`${styles.project__services} ${styles.animation__transform_top_small}`}
+                    >
+                      {project.featuring}
+                    </p>
+                    <p
+                      className={`${styles.project__services} ${styles.animation__transform_top_small}`}
+                    >
+                      {project.featuring2}
+                    </p>
+                    <p
+                      className={`${styles.project__services} ${styles.animation__transform_top_small}`}
+                    >
+                      {project.featuring3}
+                    </p>
+                    <p
+                      className={`${styles.project__year} ${styles.animation__transform_top_small}`}
+                    >
+                      {project.year}
+                    </p>
+                  </div>
+                  <span className={styles.container__image}>
+                    <NavLink to={project.link}>
                       <img
                         className={styles.animation__width}
                         src={project.image}
                         alt={project.alt}
                       />
-                    </span>
-                  </div>
-                  <div className={styles.right__container}>
-                    <div
-                      className={`${styles.container__number_of_projects} ${styles.animation__transform_left_rotate}`}
-                    >
-                      <p className={styles.animation__transform_left}>{index + 1}</p>
-                      <span></span>
-                      <p className={styles.animation__transform_right}>{projects.length}</p>
-                    </div>
+                    </NavLink>
+                  </span>
+                </div>
+                <div className={styles.right__container}>
+                  <div
+                    className={`${styles.container__number_of_projects} ${styles.animation__transform_left_rotate}`}
+                  >
+                    {index > 0 && (
+                      <div
+                        className={`${styles.container__icon}`}
+                        onClick={() => previousProject()}
+                      >
+                        <ArrowUp />
+                      </div>
+                    )}
+                    <p className={styles.animation__transform_left}>{index + 1}</p>
+                    <span></span>
+                    <p className={styles.animation__transform_right}>{projects.length}</p>
+                    {index + 1 !== projects.length && (
+                      <div className={`${styles.container__icon}`} onClick={() => nextProject()}>
+                        <ArrowDown />
+                      </div>
+                    )}
                   </div>
                 </div>
               </div>
-            </NavLink>
+            </div>
           </div>
         );
       })}

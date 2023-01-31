@@ -206,6 +206,15 @@
             position: absolute
             top: 2rem
             right: 0
+            .container__icon
+              width: 25px
+              margin: 0 10px
+              transform: rotate(269deg)
+              cursor: pointer
+              &:hover
+                transition: all 100ms ease-in
+                transform: scale(2) rotate(269deg)
+
             &.animation__transform_left_rotate
               animation-delay: 1.7s
             @media screen and ( max-width: 520px )
