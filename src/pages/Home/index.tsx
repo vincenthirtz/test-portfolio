@@ -32,7 +32,6 @@ const Home = (): JSX.Element => {
       <Header url="." />
       <div className={styles.container}>
         <ProjectHomePage projects={projects} />
-
         <div className={`${styles.mouse__container} ${styles.animation__opacity}`}>
           <div className={`${styles.mouse} ${displayMouse ? '' : styles.hidden}`}></div>
         </div>

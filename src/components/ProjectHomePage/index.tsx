@@ -11,21 +11,22 @@ type PropsType = {
 const ProjectHomePage = (props: PropsType): JSX.Element => {
   // Props pour avoir tous les projets
   const { projects } = props;
-  const [actualProject, setActualProject] = useState<number>(0);
+  const [actualProject, setActualProject] = useState<number>(-1);
   const [isScrolling, setIsScrolling] = useState<boolean>(false);
+  const [portfolioActivate, setPortfolioActivate] = useState<boolean>(false);
 
   // Fonction pour empêcher le scroll pendant l'affichage d'un projet
   const handleScroll = (timeout: number) => {
     setIsScrolling(true);
-
     setTimeout(() => {
       return setIsScrolling(false);
-    }, timeout); // Temps avant de pouvoir scroll un autre projet --> Temps des animations environ
+    }, timeout);
+    // Temps avant de pouvoir scroll un autre projet --> Temps des animations environ
   };
 
   // Fonction pour afficher le projet suivant
   const nextProject = (timeout = 2500) => {
-    if (actualProject < projects.length - 1) {
+    if (actualProject < projects.length - 1 && portfolioActivate) {
       handleScroll(timeout);
       setActualProject(actualProject + 1);
     }
@@ -33,10 +34,15 @@ const ProjectHomePage = (props: PropsType): JSX.Element => {
 
   // Fonction pour afficher le projet précédent
   const previousProject = (timeout = 2500) => {
-    if (actualProject > 0) {
+    if (actualProject > 0 && portfolioActivate) {
       handleScroll(timeout);
       setActualProject(actualProject - 1);
     }
+  };
+
+  const setPortolio = () => {
+    setPortfolioActivate(true);
+    setActualProject(actualProject + 1);
   };
 
   // Listener à chaque scroll pour afficher le projet suivant ou précédent
@@ -48,7 +54,7 @@ const ProjectHomePage = (props: PropsType): JSX.Element => {
       if (!isScrolling) {
         e = window.event || e;
         const delta = Math.max(-1, Math.min(1, e.wheelDelta || -e.detail));
-
+        setPortfolioActivate(true);
         if (delta === 1) previousProject(2500); // On change le temps avant de pouvoir rescroll en fonction de l'animation
         if (delta === -1) nextProject(2500); // On change le temps avant de pouvoir rescroll en fonction de l'animation
       }
@@ -94,95 +100,113 @@ const ProjectHomePage = (props: PropsType): JSX.Element => {
 
   return (
     <div className={styles.container}>
+      {!portfolioActivate && (
+        <div className={styles.block}>
+          <p>Créative transdisciplinaire</p>
+          <div className={styles.containerH2}>
+            <h2>
+              Fabrication <span>d’accessoires et décors</span>
+            </h2>
+            <h2>
+              Design <br /> <span>Textile & matières</span>
+            </h2>
+          </div>
+          <div className={styles.line}></div>
+          <div className={styles.containerButton}>
+            <button onClick={() => setPortolio()}>Voir le portfolio</button>
+          </div>
+        </div>
+      )}
       {/* On fait une boucle sur tous les projets */}
-      {projects.map((project, index) => {
-        return (
-          // On met la classe active au projet qui est en train d'être affiché et on l'enlève sinon
+      {portfolioActivate &&
+        projects.map((project, index) => {
+          return (
+            // On met la classe active au projet qui est en train d'être affiché et on l'enlève sinon
 
-          <div
-            key={index}
-            className={`${styles.container__project__item} ${
-              actualProject == index ? styles.active : ''
-            }`}
-          >
-            <div className={styles.project__item}>
-              <div className={styles.project__title}>
-                <NavLink to={project.link} className={styles.project__link}>
-                  <h2 className={styles.animation__background}>{project.name}</h2>
-                </NavLink>
-                <div className={styles.index__project}>
-                  <span>
-                    <div className={styles.animation__width}></div>
-                  </span>
-                  <p className={styles.animation__transform_top_small}>{'0' + (index + 1)}</p>
-                </div>
-              </div>
-              <div className={styles.item__container}>
-                <div className={styles.left__container}>
-                  <div className={styles.services__container}>
-                    <p
-                      className={`${styles.project__services} ${styles.animation__transform_top_small}`}
-                    >
-                      {project.services}
-                    </p>
-                    <p
-                      className={`${styles.project__services} ${styles.animation__transform_top_small}`}
-                    >
-                      {project.featuring}
-                    </p>
-                    <p
-                      className={`${styles.project__services} ${styles.animation__transform_top_small}`}
-                    >
-                      {project.featuring2}
-                    </p>
-                    <p
-                      className={`${styles.project__services} ${styles.animation__transform_top_small}`}
-                    >
-                      {project.featuring3}
-                    </p>
-                    <p
-                      className={`${styles.project__year} ${styles.animation__transform_top_small}`}
-                    >
-                      {project.year}
-                    </p>
+            <div
+              key={index}
+              className={`${styles.container__project__item} ${
+                actualProject == index ? styles.active : ''
+              }`}
+            >
+              <div className={styles.project__item}>
+                <div className={styles.project__title}>
+                  <NavLink to={project.link} className={styles.project__link}>
+                    <h2 className={styles.animation__background}>{project.name}</h2>
+                  </NavLink>
+                  <div className={styles.index__project}>
+                    <span>
+                      <div className={styles.animation__width}></div>
+                    </span>
+                    <p className={styles.animation__transform_top_small}>{'0' + (index + 1)}</p>
                   </div>
-                  <span className={styles.container__image}>
-                    <NavLink to={project.link}>
-                      <img
-                        className={styles.animation__width}
-                        src={project.image}
-                        alt={project.alt}
-                      />
-                    </NavLink>
-                  </span>
                 </div>
-                <div className={styles.right__container}>
-                  <div
-                    className={`${styles.container__number_of_projects} ${styles.animation__transform_left_rotate}`}
-                  >
-                    {index > 0 && (
-                      <div
-                        className={`${styles.container__icon}`}
-                        onClick={() => previousProject()}
+                <div className={styles.item__container}>
+                  <div className={styles.left__container}>
+                    <div className={styles.services__container}>
+                      <p
+                        className={`${styles.project__services} ${styles.animation__transform_top_small}`}
                       >
-                        <ArrowUp />
-                      </div>
-                    )}
-                    <p className={styles.animation__transform_left}>{index + 1}</p>
-                    <span></span>
-                    <p className={styles.animation__transform_right}>{projects.length}</p>
-                    {index + 1 !== projects.length && (
-                      <div className={`${styles.container__icon}`} onClick={() => nextProject()}>
-                        <ArrowDown />
-                      </div>
-                    )}
+                        {project.services}
+                      </p>
+                      <p
+                        className={`${styles.project__services} ${styles.animation__transform_top_small}`}
+                      >
+                        {project.featuring}
+                      </p>
+                      <p
+                        className={`${styles.project__services} ${styles.animation__transform_top_small}`}
+                      >
+                        {project.featuring2}
+                      </p>
+                      <p
+                        className={`${styles.project__services} ${styles.animation__transform_top_small}`}
+                      >
+                        {project.featuring3}
+                      </p>
+                      <p
+                        className={`${styles.project__year} ${styles.animation__transform_top_small}`}
+                      >
+                        {project.year}
+                      </p>
+                    </div>
+                    <span className={styles.container__image}>
+                      <NavLink to={project.link}>
+                        <img
+                          className={styles.animation__width}
+                          src={project.image}
+                          alt={project.alt}
+                        />
+                      </NavLink>
+                    </span>
+                  </div>
+                  <div className={styles.right__container}>
+                    <div
+                      className={`${styles.container__number_of_projects} ${styles.animation__transform_left_rotate}`}
+                    >
+                      {index > 0 && (
+                        <div
+                          className={`${styles.container__icon}`}
+                          onClick={() => previousProject()}
+                        >
+                          <ArrowUp />
+                        </div>
+                      )}
+                      <p className={styles.animation__transform_left}>{index + 1}</p>
+                      <span></span>
+                      <p className={styles.animation__transform_right}>{projects.length}</p>
+                      {index + 1 !== projects.length && (
+                        <div className={`${styles.container__icon}`} onClick={() => nextProject()}>
+                          <ArrowDown />
+                        </div>
+                      )}
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-        );
-      })}
+          );
+        })}
     </div>
   );
 };
