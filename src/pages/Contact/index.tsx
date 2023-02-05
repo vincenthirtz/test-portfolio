@@ -26,6 +26,11 @@ const Contact = (): JSX.Element => {
             margotchalmeton (@) gmail.com
           </p>
         </a>
+        <a href="tel:0760085727">
+          <p className={`${styles.contact__link} ${styles.animation__background}`}>
+            Tel: 07 60 08 57 27
+          </p>
+        </a>
       </div>
       <Footer allProjectsDisplay={true} />
     </Layout>
