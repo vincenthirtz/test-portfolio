@@ -17,6 +17,7 @@ import Saintgorgon2022 from 'pages/Saintgorgon2022';
 import Rush2022 from 'pages/Rush2022';
 import Othello from 'pages/Othello';
 import AnUnderseaOdyssey from 'pages/AnUnderseaOdyssey';
+import MasqueComedia from 'pages/MasqueComedia';
 import Services from 'pages/Services';
 import MentionsLegales from 'pages/MentionsLegales';
 import Error404 from 'pages/Error404';
@@ -43,6 +44,7 @@ const Router = (): JSX.Element => {
         <Route path="/rush-festival-2022" element={<Rush2022 />} />
         <Route path="/othello" element={<Othello />} />
         <Route path="/an-undersea-odyssey" element={<AnUnderseaOdyssey />} />
+        <Route path="/masque-comedia-dellarte" element={<MasqueComedia />} />
         <Route path="/services" element={<Services />} />
         <Route path="/legal-notices" element={<MentionsLegales />} />
         <Route path="*" element={<Error404 />} />
