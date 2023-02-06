@@ -1,6 +1,4 @@
 import styles from './Footer.module.sass';
-import Instagram from 'icons/Instagram';
-import Mail from 'icons/Mail';
 import ArrowMenu from 'icons/ArrowMenu';
 import { NavLink } from 'react-router-dom';
 
@@ -34,11 +32,14 @@ const Footer = (props: PropsType): JSX.Element => {
       )}
       {!allProjectsDisplay && <div></div>}
       <div className={styles.contact__logo}>
+        <a href="https://www.linkedin.com/in/margotchalmetonworkshop/" target="_blank">
+          <img src="images/reseaux/linkedin2.png" width="25" />
+        </a>
         <a href="https://www.instagram.com/margotchalmeton/" target="_blank">
-          <Instagram />
+          <img src="images/reseaux/instagram.png" width="25" />
         </a>
         <NavLink to="/contact">
-          <Mail />
+          <img src="images/reseaux/email.png" width="25" />
         </NavLink>
       </div>
     </footer>

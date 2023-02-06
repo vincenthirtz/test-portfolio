@@ -6,7 +6,8 @@
       "icons/*": ["./icons/*"],
       "pages/*": ["./pages/*"],
       "styles/*": ["./styles/*"],
-      "types/*": ["./types/*"]
+      "types/*": ["./types/*"],
+      "utils/*": ["./utils/*"]
     }
   }
 }

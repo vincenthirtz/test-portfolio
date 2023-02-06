@@ -1,29 +1,36 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import styles from './Menu.module.sass';
 import { NavLink } from 'react-router-dom';
 
 const Menu = (): JSX.Element => {
   // Pour afficher le menu quand on clique
   const [menuIsActive, setMenuIsActive] = useState<boolean>(false);
+  const [width, setWidth] = useState<number>(window.innerWidth);
 
   const toggleMenu = () => {
     setMenuIsActive(!menuIsActive);
   };
 
+  function handleWindowSizeChange() {
+    setWidth(window.innerWidth);
+  }
+
+  useEffect(() => {
+    window.addEventListener('resize', handleWindowSizeChange);
+    return () => {
+      window.removeEventListener('resize', handleWindowSizeChange);
+    };
+  }, []);
+
+  const isMobile = width <= 768;
+
   return (
     <nav className={styles.container}>
       {/* Le menu pour desktop */}
       <div
-        className={`${styles.menu__container} ${styles.desktop} ${
-          menuIsActive ? styles.active : ''
-        }`}
+        className={`${styles.menu__container} ${styles.desktop} ${!isMobile ? styles.active : ''}`}
       >
         <ul>
-          {/* <li>
-            <NavLink to="/all-projects" className={styles.menu__link}>
-              mes projets
-            </NavLink>
-          </li> */}
           <li>
             <NavLink to="/services" className={styles.menu__link}>
               mes services
@@ -45,15 +52,10 @@ const Menu = (): JSX.Element => {
       {/* Le menu pour mobile */}
       <div
         className={`${styles.menu__container} ${styles.mobile} ${
-          menuIsActive ? styles.active : ''
+          isMobile && menuIsActive ? styles.active : ''
         }`}
       >
         <ul>
-          {/* <li>
-            <NavLink to="/all-projects" className={styles.menu__link}>
-              mes projets
-            </NavLink>
-          </li> */}
           <li>
             <NavLink to="/services" className={styles.menu__link}>
               mes services
@@ -72,12 +74,13 @@ const Menu = (): JSX.Element => {
         </ul>
       </div>
 
-      {/* L'icone du burger et de la croix */}
-      <div className={styles.icon__container} onClick={toggleMenu}>
-        <div className={`${styles.icon} ${menuIsActive ? styles.active : ''}`}>
-          <div className={styles.burger__crose}></div>
+      {isMobile && (
+        <div className={styles.icon__container} onClick={toggleMenu}>
+          <div className={`${styles.icon} ${menuIsActive ? styles.active : ''}`}>
+            <div className={styles.burger__crose}></div>
+          </div>
         </div>
-      </div>
+      )}
     </nav>
   );
 };
