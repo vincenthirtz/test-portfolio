@@ -45,11 +45,18 @@
   align-items: center
   margin: 200px 0
 
+  @media screen and ( max-width: 520px )
+    margin: 0
+
   .block
     background-color: #323232
     width: 980px
     height: 400px
     padding: 20px
+
+    @media screen and ( max-width: 900px )
+      width: auto
+      height: 100%
 
     button
       width: 200px
@@ -75,13 +82,23 @@
       display: flex
       margin: 20px 0
 
+      @media screen and ( max-width: 900px )
+        flex-direction: column
+
     h2
       line-height: 0.95em
       font-size: 60px
 
+      @media screen and ( max-width: 900px )
+        font-size: 40px
+        margin: 20px 0
+
       span
         font-weight: 900
         font-size: 70px
+
+        @media screen and ( max-width: 900px )
+          font-size: 50px
 
   .container__project__item
     position: absolute
