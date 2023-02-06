@@ -49,7 +49,8 @@
     margin: 0
 
   .block
-    background-color: #323232
+    position: relative
+    background: linear-gradient(0deg, #000, #272727)
     width: 980px
     height: 400px
     padding: 20px
@@ -80,7 +81,7 @@
 
     .containerH2
       display: flex
-      margin: 20px 0
+      margin: 40px 0
 
       @media screen and ( max-width: 900px )
         flex-direction: column
@@ -99,6 +100,31 @@
 
         @media screen and ( max-width: 900px )
           font-size: 50px
+
+    &:before, &:after
+      content: ''
+      position: absolute
+      left: -2px
+      top: -2px
+      background: linear-gradient(45deg, #ffffff, #000000, #ffffff,#000000, #ffffff, #000000,#ffffff, #000000,#ffffff, #000000)
+      background-size: 400%
+      width: calc(100% + 4px)
+      height: calc(100% + 4px)
+      z-index: -1
+      animation: steam 50s linear infinite
+
+      @keyframes steam
+        0%
+          background-position: 0 0
+
+        50%
+          background-position: 400% 0
+
+        100%
+          background-position: 0 0
+
+      &:after
+          filter: blur(50px)
 
   .container__project__item
     position: absolute
