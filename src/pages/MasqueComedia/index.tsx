@@ -83,12 +83,8 @@ const MasqueComedia = (): JSX.Element => {
           titleLink=""
           link=""
           year={2019}
-          services={[
-            `Création d'un Masque en papier maché, patine effet cuir.`,
-          ]}
-          elements={[
-            <span>Crédit photo: Margot Chalmeton</span>,
-          ]}
+          services={[`Création d'un Masque en papier maché, patine effet cuir.`]}
+          elements={[<span>Crédit photo: Margot Chalmeton</span>]}
         />
         <div className={styles.images__container}>
           <div className={`${styles.row} ${styles.animation__transform_top}`}>
