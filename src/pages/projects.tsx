@@ -1,7 +1,7 @@
 export const projects = [
   {
     name: '',
-    year: 2023,
+    year: 2022,
     featuring: '',
     featuring2: 'Helena Klotz',
     featuring3: 'Les Films du Belier production',
