@@ -112,7 +112,7 @@ export const projects = [
     year: 2022,
     featuring: '',
     featuring2: '',
-    featuring3: ``,
+    featuring3: `Aude Bourgine`,
     services: `Projet “AN UNDERSEA ODYSSEY”`,
     link: 'an-undersea-odyssey',
     image: 'images/ACCESSOIRES ET DECORS/AN UNDERSEA ODYSSEY/Photo1.jpg',

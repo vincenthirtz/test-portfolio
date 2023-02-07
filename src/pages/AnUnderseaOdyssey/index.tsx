@@ -84,7 +84,7 @@ const AnUnderseaOdyssey = (): JSX.Element => {
           link=""
           year={2022}
           services={[`Aide à la fabrication de l’oeuvre « An Undersea Odyssey »`]}
-          elements={[<span>Fabrications d’accessoires.</span>]}
+          elements={[<span>Par Aude Bourgine. Fabrications d’accessoires pour le projet.</span>]}
         />
         <div className={styles.images__container}>
           <div className={`${styles.row} ${styles.animation__transform_top}`}>
