@@ -54,6 +54,7 @@
     width: 980px
     height: 400px
     padding: 20px
+    border: 0.1px solid #fff
 
     @media screen and ( max-width: 900px )
       width: auto
@@ -101,30 +102,30 @@
         @media screen and ( max-width: 900px )
           font-size: 50px
 
-    &:before, &:after
-      content: ''
-      position: absolute
-      left: -2px
-      top: -2px
-      background: linear-gradient(45deg, #ffffff, #000000, #ffffff,#000000, #ffffff, #000000,#ffffff, #000000,#ffffff, #000000)
-      background-size: 400%
-      width: calc(100% + 4px)
-      height: calc(100% + 4px)
-      z-index: -1
-      animation: steam 50s linear infinite
+    // &:before, &:after
+    //   content: ''
+    //   position: absolute
+    //   left: -2px
+    //   top: -2px
+    //   background: linear-gradient(45deg, #ffffff, #000000, #ffffff,#000000, #ffffff, #000000,#ffffff, #000000,#ffffff, #000000)
+    //   background-size: 400%
+    //   width: calc(100% + 4px)
+    //   height: calc(100% + 4px)
+    //   z-index: -1
+    //   animation: steam 50s linear infinite
 
-      @keyframes steam
-        0%
-          background-position: 0 0
+    //   @keyframes steam
+    //     0%
+    //       background-position: 0 0
 
-        50%
-          background-position: 400% 0
+    //     50%
+    //       background-position: 400% 0
 
-        100%
-          background-position: 0 0
+    //     100%
+    //       background-position: 0 0
 
-      &:after
-          filter: blur(50px)
+    //   &:after
+    //       filter: blur(50px)
 
   .container__project__item
     position: absolute
