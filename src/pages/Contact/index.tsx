@@ -3,17 +3,14 @@ import { Helmet } from 'react-helmet-async';
 import Layout from 'components/Layout';
 import styles from './Contact.module.sass';
 import Header from 'components/Header';
-import Footer from 'components/Footer';
 
 const Contact = (): JSX.Element => {
-  // Fonction pour être en haut de la page quand on arrive sur une page --> merci React.js
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
 
   return (
     <Layout>
-      {/* Pour le SEO on utilise Helmet, on peut y rajouter tout les tags du Head que l'on veut pour cette page spécifiquement */}
       <Helmet>
         <title>Margot Chalmeton | Contact</title>
         <meta name="description" content="Contactez Margot Chalmeton par mail." />
@@ -21,18 +18,37 @@ const Contact = (): JSX.Element => {
 
       <Header url="/contact" />
       <div className={styles.container}>
-        <a href="mailto:margotchalmeton@gmail.com">
-          <p className={`${styles.contact__link} ${styles.animation__background}`}>
-            margotchalmeton (@) gmail.com
-          </p>
-        </a>
-        <a href="tel:0760085727">
-          <p className={`${styles.contact__link} ${styles.animation__background}`}>
-            Tel: 07 60 08 57 27
-          </p>
-        </a>
+        <div className={styles.links}>
+          <div className={styles.link}>
+            <a href="mailto:margotchalmeton@gmail.com" target="_blank">
+              <p className={`${styles.contact__link} ${styles.animation__background}`}>
+                margotchalmeton (@) gmail.com
+              </p>
+            </a>
+          </div>
+          <div className={styles.link}>
+            <a href="tel:0760085727" target="_blank">
+              <p className={`${styles.contact__link} ${styles.animation__background}`}>
+                Tel: 07 60 08 57 27
+              </p>
+            </a>
+          </div>
+          <div className={styles.link}>
+            <a href="https://www.linkedin.com/in/margotchalmetonworkshop/" target="_blank">
+              <p className={`${styles.contact__link} ${styles.animation__background}`}>
+                Linkedin @margotchalmetonworkshop
+              </p>
+            </a>
+          </div>
+          <div className={styles.link}>
+            <a href="https://www.instagram.com/margotchalmeton/" target="_blank">
+              <p className={`${styles.contact__link} ${styles.animation__background}`}>
+                Instagram @margotchalmeton
+              </p>
+            </a>
+          </div>
+        </div>
       </div>
-      <Footer allProjectsDisplay={true} />
     </Layout>
   );
 };

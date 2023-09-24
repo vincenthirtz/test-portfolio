@@ -23,7 +23,7 @@ const Error404 = (): JSX.Element => {
       <div className={styles.container}>
         <h1>Erreur 404</h1>
       </div>
-      <Footer allProjectsDisplay={false} />
+      <Footer />
     </Layout>
   );
 };

@@ -9,16 +9,13 @@ import { NavLink } from 'react-router-dom';
 import { ParallaxProvider, Parallax } from 'react-scroll-parallax';
 
 const About = (): JSX.Element => {
-  // Fonction pour être en haut de la page quand on arrive sur une page --> merci React.js
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
 
   return (
-    // On utilise le parallax provider autour de toute ma page
     <ParallaxProvider>
       <Layout>
-        {/* Pour le SEO on utilise Helmet, on peut y rajouter tout les tags du Head que l'on veut pour cette page spécifiquement */}
         <Helmet>
           <title>Margot Chalmeton | À propos</title>
           <meta
@@ -29,14 +26,6 @@ const About = (): JSX.Element => {
 
         <Header url="/à-propos" />
         <div className={styles.container}>
-          {/* On utilise le parallax sur notre container avec des valeurs un peu aléatoire mais qui fait que ça marche */}
-          <Parallax className={styles.citation__container} translateX={['380px', '-250px']}>
-            <div className={`${styles.citation} ${styles.animation__background}`}>
-              {/* <h1>L’art est dans l’infini detail.</h1> */}
-              {/* <h2>Federico Fellini</h2> */}
-            </div>
-          </Parallax>
-          {/* On utilise le parallax sur notre container avec des valeurs un peu aléatoire mais qui fait que ça marche */}
           <Parallax className={styles.text} translateY={['-250px', '450px']}>
             <div className={`${styles.item} ${styles.animation__transform_top}`}>
               <h4>1. Margot Chalmeton</h4>
@@ -108,7 +97,7 @@ const About = (): JSX.Element => {
             </div>
           </Parallax>
         </div>
-        <Footer allProjectsDisplay={false} />
+        <Footer />
       </Layout>
     </ParallaxProvider>
   );

@@ -94,7 +94,9 @@ const Nemesis = (): JSX.Element => {
           ]}
           elements={[
             <span>Fabrications d’accessoires.</span>,
-            <span>Crédit photo : Fun outdoors © Valley Times Collection / Los Angeles Public Library</span>,
+            <span>
+              Crédit photo : Fun outdoors © Valley Times Collection / Los Angeles Public Library
+            </span>,
             <a href="https://www.theatre-odeon.eu/fr/saison-2022-2023/spectacles-22-23/nemesis_1">
               Article du projet
             </a>,
