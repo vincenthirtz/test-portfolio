@@ -81,6 +81,7 @@ const ProjectHomePage = (props: PropsType): JSX.Element => {
                     <span className={styles.container__image}>
                       <NavLink to={project.link}>
                         <img
+                          loading="lazy"
                           className={styles.animation__width}
                           src={project.image}
                           alt={project.alt}
