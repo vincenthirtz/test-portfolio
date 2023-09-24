@@ -21,6 +21,7 @@ import MasqueComedia from 'pages/MasqueComedia';
 import Services from 'pages/Services';
 import MentionsLegales from 'pages/MentionsLegales';
 import Error404 from 'pages/Error404';
+import AccessoiresAndDecors from 'pages/AccessoiresAndDecors';
 
 const Router = (): JSX.Element => {
   return (
@@ -29,6 +30,7 @@ const Router = (): JSX.Element => {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/all-projects" element={<AllProjects />} />
+        <Route path="/accessoires&decors" element={<AccessoiresAndDecors />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/aude-bourgine" element={<CoralEternal />} />
         <Route path="/cafete" element={<Cafete />} />

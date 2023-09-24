@@ -8,6 +8,7 @@ type PropsType = {
 
 const Header = (props: PropsType): JSX.Element => {
   const { url } = props;
+  const redirection = window.location.origin;
 
   return (
     <header className={styles.container}>
@@ -17,7 +18,7 @@ const Header = (props: PropsType): JSX.Element => {
             Margot Chalmeton
           </NavLink>
         ) : (
-          <NavLink to="https://margotchalmeton.fr" className={styles.logo}>
+          <NavLink to={redirection} className={styles.logo}>
             Margot Chalmeton
           </NavLink>
         )}

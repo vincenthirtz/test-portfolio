@@ -4,19 +4,16 @@ import { NavLink } from 'react-router-dom';
 
 type PropsType = {
   projects: ProjectType[];
+  home: boolean;
 };
 
 const ProjectHomePage = (props: PropsType): JSX.Element => {
-  const { projects } = props;
-  const [portfolioActivate, setPortfolioActivate] = useState<boolean>(false);
-
-  const setPortolio = () => {
-    setPortfolioActivate(true);
-  };
+  const { projects, home } = props;
+  const [portfolioActivate] = useState<boolean>(home);
 
   return (
-    <div className={`${styles.container} ${!portfolioActivate ? styles.containerbis : ''}`}>
-      {!portfolioActivate && (
+    <div className={`${styles.container} ${portfolioActivate ? styles.containerbis : ''}`}>
+      {portfolioActivate && (
         <div className={styles.block}>
           <p>Créative transdisciplinaire</p>
           <div className={styles.containerH2}>
@@ -29,11 +26,13 @@ const ProjectHomePage = (props: PropsType): JSX.Element => {
           </div>
           <div className={styles.line}></div>
           <div className={styles.containerButton}>
-            <button onClick={() => setPortolio()}>Voir le portfolio</button>
+            <a className={styles.superbutton} href="/accessoires&decors">
+              Voir le portfolio
+            </a>
           </div>
         </div>
       )}
-      {portfolioActivate &&
+      {!portfolioActivate &&
         projects.map((project, index) => {
           return (
             <div key={index} className={`${styles.container__project__item} ${styles.active}`}>

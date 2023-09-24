@@ -3,7 +3,6 @@ import styles from './Menu.module.sass';
 import { NavLink } from 'react-router-dom';
 
 const Menu = (): JSX.Element => {
-  // Pour afficher le menu quand on clique
   const [menuIsActive, setMenuIsActive] = useState<boolean>(false);
   const [width, setWidth] = useState<number>(window.innerWidth);
 
@@ -26,11 +25,20 @@ const Menu = (): JSX.Element => {
 
   return (
     <nav className={styles.container}>
-      {/* Le menu pour desktop */}
       <div
         className={`${styles.menu__container} ${styles.desktop} ${!isMobile ? styles.active : ''}`}
       >
         <ul>
+          <li>
+            <NavLink
+              className={({ isActive, isPending }) =>
+                isPending ? 'pending' : isActive ? 'active' : styles.menu__link
+              }
+              to="/accessoires&decors"
+            >
+              Accessoires & Decors
+            </NavLink>
+          </li>
           <li>
             <NavLink to="/services" className={styles.menu__link}>
               mes services
@@ -49,7 +57,6 @@ const Menu = (): JSX.Element => {
         </ul>
       </div>
 
-      {/* Le menu pour mobile */}
       <div
         className={`${styles.menu__container} ${styles.mobile} ${
           isMobile && menuIsActive ? styles.active : ''
