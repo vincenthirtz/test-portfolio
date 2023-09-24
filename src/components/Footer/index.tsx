@@ -1,5 +1,4 @@
 import styles from './Footer.module.sass';
-import ArrowMenu from 'icons/ArrowMenu';
 import { NavLink } from 'react-router-dom';
 
 type PropsType = {
@@ -23,13 +22,6 @@ const Footer = (props: PropsType): JSX.Element => {
 
   return (
     <footer className={styles.container}>
-      {/* On affiche le lien si que si la page doit avoir le lien */}
-      {allProjectsDisplay && (
-        <NavLink to={allProjectsLink} className={styles.all_projects__link}>
-          <ArrowMenu />
-          {allProjectsText}
-        </NavLink>
-      )}
       {!allProjectsDisplay && <div></div>}
       <div className={styles.contact__logo}>
         <a href="https://www.linkedin.com/in/margotchalmetonworkshop/" target="_blank">

@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useEffect } from 'react';
 import { Helmet } from 'react-helmet-async';
 import Layout from 'components/Layout';
 import styles from './Home.module.sass';
@@ -8,13 +8,6 @@ import ProjectHomePage from 'components/ProjectHomePage';
 import { projects } from 'pages/projects';
 
 const Home = (): JSX.Element => {
-  const [displayMouse, setDisplayMouse] = useState(true);
-
-  // Fonction pour enlever l'animation de la souris après un certain temps
-  setTimeout(() => {
-    setDisplayMouse(false);
-  }, 3000 + 6000); // 3000 c'est le temps avant l'apparition, puis on ajoute le temps qu'il faut avant de le faire disparaître
-
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -32,9 +25,6 @@ const Home = (): JSX.Element => {
       <Header url="." />
       <div className={styles.container}>
         <ProjectHomePage projects={projects} />
-        <div className={`${styles.mouse__container} ${styles.animation__opacity}`}>
-          <div className={`${styles.mouse} ${displayMouse ? '' : styles.hidden}`}></div>
-        </div>
       </div>
       <Footer />
     </Layout>

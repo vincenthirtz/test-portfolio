@@ -1,105 +1,21 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import styles from './ProjectHomePage.module.sass';
 import { NavLink } from 'react-router-dom';
-import ArrowUp from 'icons/ArrowUp';
-import ArrowDown from 'icons/ArrowDown';
 
 type PropsType = {
   projects: ProjectType[];
 };
 
 const ProjectHomePage = (props: PropsType): JSX.Element => {
-  // Props pour avoir tous les projets
   const { projects } = props;
-  const [actualProject, setActualProject] = useState<number>(-1);
-  const [isScrolling, setIsScrolling] = useState<boolean>(false);
   const [portfolioActivate, setPortfolioActivate] = useState<boolean>(false);
-
-  // Fonction pour empêcher le scroll pendant l'affichage d'un projet
-  const handleScroll = (timeout: number) => {
-    setIsScrolling(true);
-    setTimeout(() => {
-      return setIsScrolling(false);
-    }, timeout);
-    // Temps avant de pouvoir scroll un autre projet --> Temps des animations environ
-  };
-
-  // Fonction pour afficher le projet suivant
-  const nextProject = (timeout = 2500) => {
-    if (actualProject < projects.length - 1 && portfolioActivate) {
-      handleScroll(timeout);
-      setActualProject(actualProject + 1);
-    }
-  };
-
-  // Fonction pour afficher le projet précédent
-  const previousProject = (timeout = 2500) => {
-    if (actualProject > 0 && portfolioActivate) {
-      handleScroll(timeout);
-      setActualProject(actualProject - 1);
-    }
-  };
 
   const setPortolio = () => {
     setPortfolioActivate(true);
-    setActualProject(actualProject + 1);
   };
 
-  // Listener à chaque scroll pour afficher le projet suivant ou précédent
-  useEffect(() => {
-    // Fonction qui retourne 1 si on scroll en haut et -1 si on scroll en bas
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    const mouseWheelHandler = (e: any) => {
-      // On exécute la fonction que si on n'est pas en train d'afficher un projet
-      if (!isScrolling) {
-        e = window.event || e;
-        const delta = Math.max(-1, Math.min(1, e.wheelDelta || -e.detail));
-        setPortfolioActivate(true);
-        if (delta === 1) previousProject(2500); // On change le temps avant de pouvoir rescroll en fonction de l'animation
-        if (delta === -1) nextProject(2500); // On change le temps avant de pouvoir rescroll en fonction de l'animation
-      }
-    };
-
-    // Fonction pour le scroll sur mobile
-    // Tableau pour comparer les 2 derniers scroll et retourner true ou false en fonction de si on scroll en haut ou en bas
-    let scrollYTouchMove: number[] = [];
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    const touchMoveHandler = (e: any) => {
-      if (!isScrolling) {
-        e = window.event || e;
-        scrollYTouchMove.push(e.touches[0].screenY);
-        // On le met à 10 pour être sur que c'est bien un touchmove voulu et pas accidentel
-        if (scrollYTouchMove.length >= 10) {
-          if (scrollYTouchMove[0] > scrollYTouchMove[scrollYTouchMove.length - 1]) {
-            nextProject(1500); // On change le temps avant de pouvoir rescroll en fonction de l'animation
-          } else {
-            previousProject(1500); // On change le temps avant de pouvoir rescroll en fonction de l'animation
-          }
-
-          scrollYTouchMove = [];
-        }
-      }
-    };
-    // On utilie un listener en fonction du navigateur
-    // IE9, Chrome, Safari, Opera
-    window.addEventListener('mousewheel', mouseWheelHandler, false);
-    // Firefox
-    window.addEventListener('DOMMouseScroll', mouseWheelHandler, false);
-    // Mobile
-    window.addEventListener('touchmove', touchMoveHandler, false);
-
-    return () => {
-      // IE9, Chrome, Safari, Opera
-      window.removeEventListener('mousewheel', mouseWheelHandler, false);
-      // Firefox
-      window.removeEventListener('DOMMouseScroll', mouseWheelHandler, false);
-      // Mobile
-      window.removeEventListener('touchmove', touchMoveHandler, false);
-    };
-  });
-
   return (
-    <div className={styles.container}>
+    <div className={`${styles.container} ${!portfolioActivate ? styles.containerbis : ''}`}>
       {!portfolioActivate && (
         <div className={styles.block}>
           <p>Créative transdisciplinaire</p>
@@ -117,18 +33,10 @@ const ProjectHomePage = (props: PropsType): JSX.Element => {
           </div>
         </div>
       )}
-      {/* On fait une boucle sur tous les projets */}
       {portfolioActivate &&
         projects.map((project, index) => {
           return (
-            // On met la classe active au projet qui est en train d'être affiché et on l'enlève sinon
-
-            <div
-              key={index}
-              className={`${styles.container__project__item} ${
-                actualProject == index ? styles.active : ''
-              }`}
-            >
+            <div key={index} className={`${styles.container__project__item} ${styles.active}`}>
               <div className={styles.project__item}>
                 <div className={styles.project__title}>
                   <NavLink to={project.link} className={styles.project__link}>
@@ -179,28 +87,6 @@ const ProjectHomePage = (props: PropsType): JSX.Element => {
                         />
                       </NavLink>
                     </span>
-                  </div>
-                  <div className={styles.right__container}>
-                    <div
-                      className={`${styles.container__number_of_projects} ${styles.animation__transform_left_rotate}`}
-                    >
-                      {index > 0 && (
-                        <div
-                          className={`${styles.container__icon}`}
-                          onClick={() => previousProject()}
-                        >
-                          <ArrowUp />
-                        </div>
-                      )}
-                      <p className={styles.animation__transform_left}>{index + 1}</p>
-                      <span></span>
-                      <p className={styles.animation__transform_right}>{projects.length}</p>
-                      {index + 1 !== projects.length && (
-                        <div className={`${styles.container__icon}`} onClick={() => nextProject()}>
-                          <ArrowDown />
-                        </div>
-                      )}
-                    </div>
                   </div>
                 </div>
               </div>
