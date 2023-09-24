@@ -7,15 +7,20 @@ type PropsType = {
 };
 
 const Header = (props: PropsType): JSX.Element => {
-  // On change le fil d'ariane en fonction de la page
   const { url } = props;
 
   return (
     <header className={styles.container}>
       <div className={styles.logo__container}>
-        <NavLink to="/" className={styles.logo}>
-          Margot Chalmeton
-        </NavLink>
+        {url !== '.' ? (
+          <NavLink to="/" className={styles.logo}>
+            Margot Chalmeton
+          </NavLink>
+        ) : (
+          <NavLink to="https://margotchalmeton.fr" className={styles.logo}>
+            Margot Chalmeton
+          </NavLink>
+        )}
         <p className={styles.logo__url}>{url}</p>
       </div>
       <Menu />
