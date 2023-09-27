@@ -37,7 +37,7 @@ const ProjectHomePage = (props: PropsType): JSX.Element => {
           return (
             <div key={index} className={`${styles.container__project__item} ${styles.active}`}>
               <div className={styles.project__item}>
-                <div className={styles.project__title}>
+                {/* <div className={styles.project__title}>
                   <NavLink to={project.link} className={styles.project__link}>
                     <h2 className={styles.animation__background}>{project.name}</h2>
                   </NavLink>
@@ -47,9 +47,19 @@ const ProjectHomePage = (props: PropsType): JSX.Element => {
                     </span>
                     <p className={styles.animation__transform_top_small}>{'0' + (index + 1)}</p>
                   </div>
-                </div>
+                </div> */}
                 <div className={styles.item__container}>
                   <div className={styles.left__container}>
+                    <span className={styles.container__image}>
+                      <NavLink to={project.link}>
+                        <img
+                          loading="lazy"
+                          className={styles.animation__width}
+                          src={project.image}
+                          alt={project.alt}
+                        />
+                      </NavLink>
+                    </span>
                     <div className={styles.services__container}>
                       <p
                         className={`${styles.project__services} ${styles.animation__transform_top_small}`}
@@ -72,16 +82,6 @@ const ProjectHomePage = (props: PropsType): JSX.Element => {
                         {project.year}
                       </p>
                     </div>
-                    <span className={styles.container__image}>
-                      <NavLink to={project.link}>
-                        <img
-                          loading="lazy"
-                          className={styles.animation__width}
-                          src={project.image}
-                          alt={project.alt}
-                        />
-                      </NavLink>
-                    </span>
                   </div>
                 </div>
               </div>
