@@ -103,71 +103,71 @@ const Lcdo = (): JSX.Element => {
         <div className={styles.images__container}>
           <div className={`${styles.row} ${styles.animation__transform_top}`}>
             <img
-              src="images/ACCESSOIRES ET DECORS/CONSTELLATION DE LOURS/Julien Helie Photographe/decor.webp"
+              src="images/accessoiresetdecors/CONSTELLATION DE LOURS/Julien Helie Photographe/decor.webp"
               onClick={handleImage}
             />
             <img
-              src="images/ACCESSOIRES ET DECORS/CONSTELLATION DE LOURS/Julien Helie Photographe/photo1.webp"
-              onClick={handleImage}
-            />
-          </div>
-          <div className={`${styles.row} ${styles.animation__transform_top}`}>
-            <img
-              src="images/ACCESSOIRES ET DECORS/CONSTELLATION DE LOURS/Julien Helie Photographe/photo2.webp"
-              onClick={handleImage}
-            />
-            <img
-              src="images/ACCESSOIRES ET DECORS/CONSTELLATION DE LOURS/Julien Helie Photographe/photo3.webp"
+              src="images/accessoiresetdecors/CONSTELLATION DE LOURS/Julien Helie Photographe/photo1.webp"
               onClick={handleImage}
             />
           </div>
           <div className={`${styles.row} ${styles.animation__transform_top}`}>
             <img
-              src="images/ACCESSOIRES ET DECORS/CONSTELLATION DE LOURS/Julien Helie Photographe/photo4.webp"
+              src="images/accessoiresetdecors/CONSTELLATION DE LOURS/Julien Helie Photographe/photo2.webp"
               onClick={handleImage}
             />
             <img
-              src="images/ACCESSOIRES ET DECORS/CONSTELLATION DE LOURS/Julien Helie Photographe/photo5.webp"
-              onClick={handleImage}
-            />
-          </div>
-          <div className={`${styles.row} ${styles.animation__transform_top}`}>
-            <img
-              src="images/ACCESSOIRES ET DECORS/CONSTELLATION DE LOURS/Julien Helie Photographe/photo6.webp"
-              onClick={handleImage}
-            />
-            <img
-              src="images/ACCESSOIRES ET DECORS/CONSTELLATION DE LOURS/Julien Helie Photographe/photo7.webp"
+              src="images/accessoiresetdecors/CONSTELLATION DE LOURS/Julien Helie Photographe/photo3.webp"
               onClick={handleImage}
             />
           </div>
           <div className={`${styles.row} ${styles.animation__transform_top}`}>
             <img
-              src="images/ACCESSOIRES ET DECORS/CONSTELLATION DE LOURS/Julien Helie Photographe/photo8.webp"
+              src="images/accessoiresetdecors/CONSTELLATION DE LOURS/Julien Helie Photographe/photo4.webp"
               onClick={handleImage}
             />
             <img
-              src="images/ACCESSOIRES ET DECORS/CONSTELLATION DE LOURS/Julien Helie Photographe/photo9.webp"
-              onClick={handleImage}
-            />
-          </div>
-          <div className={`${styles.row} ${styles.animation__transform_top}`}>
-            <img
-              src="images/ACCESSOIRES ET DECORS/CONSTELLATION DE LOURS/Julien Helie Photographe/photo10.webp"
-              onClick={handleImage}
-            />
-            <img
-              src="images/ACCESSOIRES ET DECORS/CONSTELLATION DE LOURS/Julien Helie Photographe/photo11.webp"
+              src="images/accessoiresetdecors/CONSTELLATION DE LOURS/Julien Helie Photographe/photo5.webp"
               onClick={handleImage}
             />
           </div>
           <div className={`${styles.row} ${styles.animation__transform_top}`}>
             <img
-              src="images/ACCESSOIRES ET DECORS/CONSTELLATION DE LOURS/Julien Helie Photographe/photo12.webp"
+              src="images/accessoiresetdecors/CONSTELLATION DE LOURS/Julien Helie Photographe/photo6.webp"
               onClick={handleImage}
             />
             <img
-              src="images/ACCESSOIRES ET DECORS/CONSTELLATION DE LOURS/Julien Helie Photographe/photo13.webp"
+              src="images/accessoiresetdecors/CONSTELLATION DE LOURS/Julien Helie Photographe/photo7.webp"
+              onClick={handleImage}
+            />
+          </div>
+          <div className={`${styles.row} ${styles.animation__transform_top}`}>
+            <img
+              src="images/accessoiresetdecors/CONSTELLATION DE LOURS/Julien Helie Photographe/photo8.webp"
+              onClick={handleImage}
+            />
+            <img
+              src="images/accessoiresetdecors/CONSTELLATION DE LOURS/Julien Helie Photographe/photo9.webp"
+              onClick={handleImage}
+            />
+          </div>
+          <div className={`${styles.row} ${styles.animation__transform_top}`}>
+            <img
+              src="images/accessoiresetdecors/CONSTELLATION DE LOURS/Julien Helie Photographe/photo10.webp"
+              onClick={handleImage}
+            />
+            <img
+              src="images/accessoiresetdecors/CONSTELLATION DE LOURS/Julien Helie Photographe/photo11.webp"
+              onClick={handleImage}
+            />
+          </div>
+          <div className={`${styles.row} ${styles.animation__transform_top}`}>
+            <img
+              src="images/accessoiresetdecors/CONSTELLATION DE LOURS/Julien Helie Photographe/photo12.webp"
+              onClick={handleImage}
+            />
+            <img
+              src="images/accessoiresetdecors/CONSTELLATION DE LOURS/Julien Helie Photographe/photo13.webp"
               onClick={handleImage}
             />
           </div>
@@ -175,7 +175,7 @@ const Lcdo = (): JSX.Element => {
 
         <div className={styles.footer__project}>
           <div className={styles.animation__background}>
-            <LinkNextProject text="A venir" link="/fissure" />
+            <LinkNextProject text="A venir" link="/accessoires&decors/fissure" />
           </div>
         </div>
       </div>

@@ -97,22 +97,25 @@ const Hybride = (): JSX.Element => {
             className={styles.animation__transform_top}
             controls
             controlsList="nodownload"
-            poster="images/ACCESSOIRES ET DECORS/HYBRIDE/face.webp"
+            poster="images/accessoiresetdecors/HYBRIDE/face.webp"
           >
-            <source src="images/ACCESSOIRES ET DECORS/HYBRIDE/video.MP4" type="video/mp4" />
+            <source src="images/accessoiresetdecors/HYBRIDE/video.MP4" type="video/mp4" />
           </video>
           <div className={`${styles.row} ${styles.animation__transform_top}`}>
-            <img src="images/ACCESSOIRES ET DECORS/HYBRIDE/face.webp" onClick={handleImage} />
-            <img src="images/ACCESSOIRES ET DECORS/HYBRIDE/profil.webp" onClick={handleImage} />
+            <img src="images/accessoiresetdecors/HYBRIDE/face.webp" onClick={handleImage} />
+            <img src="images/accessoiresetdecors/HYBRIDE/profil.webp" onClick={handleImage} />
           </div>
           <div className={`${styles.row} ${styles.animation__transform_top}`}>
-            <img src="images/ACCESSOIRES ET DECORS/HYBRIDE/haut.webp" onClick={handleImage} />
+            <img src="images/accessoiresetdecors/HYBRIDE/haut.webp" onClick={handleImage} />
           </div>
         </div>
 
         <div className={styles.footer__project}>
           <div className={styles.animation__background}>
-            <LinkNextProject text="Projet Le poids des choses" link="/le-poids-des-choses" />
+            <LinkNextProject
+              text="Projet Le poids des choses"
+              link="/accessoires&decors/le-poids-des-choses"
+            />
           </div>
         </div>
       </div>

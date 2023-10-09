@@ -91,12 +91,12 @@ const Mun = (): JSX.Element => {
         />
         <div className={styles.images__container}>
           <div className={`${styles.row} ${styles.animation__transform_top}`}>
-            <img src="images/ACCESSOIRES ET DECORS/MUN/photo1.webp" onClick={handleImage} />
-            <img src="images/ACCESSOIRES ET DECORS/MUN/photo2.webp" onClick={handleImage} />
+            <img src="images/accessoiresetdecors/MUN/photo1.webp" onClick={handleImage} />
+            <img src="images/accessoiresetdecors/MUN/photo2.webp" onClick={handleImage} />
           </div>
           <div className={`${styles.row} ${styles.animation__transform_top}`}>
-            <img src="images/ACCESSOIRES ET DECORS/MUN/photo3.webp" onClick={handleImage} />
-            <img src="images/ACCESSOIRES ET DECORS/MUN/photo4.webp" onClick={handleImage} />
+            <img src="images/accessoiresetdecors/MUN/photo3.webp" onClick={handleImage} />
+            <img src="images/accessoiresetdecors/MUN/photo4.webp" onClick={handleImage} />
           </div>
         </div>
 
@@ -104,7 +104,7 @@ const Mun = (): JSX.Element => {
           <div className={styles.animation__background}>
             <LinkNextProject
               text={`Projet Tête de marionnette géante "Saint-Gorgon"`}
-              link="/saint-gorgon"
+              link="/accessoires&decors/saint-gorgon"
             />
           </div>
         </div>

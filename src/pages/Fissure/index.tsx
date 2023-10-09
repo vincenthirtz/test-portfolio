@@ -95,24 +95,21 @@ const Fissure = (): JSX.Element => {
         />
         <div className={styles.images__container}>
           <div className={`${styles.row} ${styles.animation__transform_top}`}>
-            <img src="images/ACCESSOIRES ET DECORS/FISSURE/plan-flou.webp" onClick={handleImage} />
-            <img
-              src="images/ACCESSOIRES ET DECORS/FISSURE/photo-rouge.webp"
-              onClick={handleImage}
-            />
+            <img src="images/accessoiresetdecors/FISSURE/plan-flou.webp" onClick={handleImage} />
+            <img src="images/accessoiresetdecors/FISSURE/photo-rouge.webp" onClick={handleImage} />
           </div>
           <div className={`${styles.row} ${styles.animation__transform_top}`}>
             <img
-              src="images/ACCESSOIRES ET DECORS/FISSURE/photo-noir-blanc.webp"
+              src="images/accessoiresetdecors/FISSURE/photo-noir-blanc.webp"
               onClick={handleImage}
             />
-            <img src="images/ACCESSOIRES ET DECORS/FISSURE/focus.jpg" onClick={handleImage} />
+            <img src="images/accessoiresetdecors/FISSURE/focus.jpg" onClick={handleImage} />
           </div>
         </div>
 
         <div className={styles.footer__project}>
           <div className={styles.animation__background}>
-            <LinkNextProject text="Projet Hybride" link="/hybride" />
+            <LinkNextProject text="Projet Hybride" link="/accessoires&decors/hybride" />
           </div>
         </div>
       </div>

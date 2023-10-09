@@ -98,36 +98,24 @@ const Saintgorgon2022 = (): JSX.Element => {
         />
         <div className={styles.images__container}>
           <div className={`${styles.row} ${styles.animation__transform_top}`}>
-            <img
-              src="images/ACCESSOIRES ET DECORS/MARIONNETTE2/photo1.webp"
-              onClick={handleImage}
-            />
-            <img
-              src="images/ACCESSOIRES ET DECORS/MARIONNETTE2/photo2.webp"
-              onClick={handleImage}
-            />
+            <img src="images/accessoiresetdecors/MARIONNETTE2/photo1.webp" onClick={handleImage} />
+            <img src="images/accessoiresetdecors/MARIONNETTE2/photo2.webp" onClick={handleImage} />
           </div>
           <div className={`${styles.row} ${styles.animation__transform_top}`}>
-            <img
-              src="images/ACCESSOIRES ET DECORS/MARIONNETTE2/photo3.webp"
-              onClick={handleImage}
-            />
-            <img
-              src="images/ACCESSOIRES ET DECORS/MARIONNETTE2/photo4.webp"
-              onClick={handleImage}
-            />
+            <img src="images/accessoiresetdecors/MARIONNETTE2/photo3.webp" onClick={handleImage} />
+            <img src="images/accessoiresetdecors/MARIONNETTE2/photo4.webp" onClick={handleImage} />
           </div>
           <div className={`${styles.row} ${styles.animation__transform_top}`}>
-            <img
-              src="images/ACCESSOIRES ET DECORS/MARIONNETTE2/photo5.webp"
-              onClick={handleImage}
-            />
+            <img src="images/accessoiresetdecors/MARIONNETTE2/photo5.webp" onClick={handleImage} />
           </div>
         </div>
 
         <div className={styles.footer__project}>
           <div className={styles.animation__background}>
-            <LinkNextProject text="Projet Rush Festival 2022" link="/rush-festival-2022" />
+            <LinkNextProject
+              text="Projet Rush Festival 2022"
+              link="/accessoires&decors/rush-festival-2022"
+            />
           </div>
         </div>
       </div>

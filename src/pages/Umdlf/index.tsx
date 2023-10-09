@@ -100,21 +100,24 @@ const Umdlf = (): JSX.Element => {
         />
         <div className={styles.images__container}>
           <div className={`${styles.row} ${styles.animation__transform_top}`}>
-            <img src="images/ACCESSOIRES ET DECORS/UMDLF/photo1.webp" onClick={handleImage} />
-            <img src="images/ACCESSOIRES ET DECORS/UMDLF/photo2.webp" onClick={handleImage} />
+            <img src="images/accessoiresetdecors/UMDLF/photo1.webp" onClick={handleImage} />
+            <img src="images/accessoiresetdecors/UMDLF/photo2.webp" onClick={handleImage} />
           </div>
           <div className={`${styles.row} ${styles.animation__transform_top}`}>
-            <img src="images/ACCESSOIRES ET DECORS/UMDLF/photo3.webp" onClick={handleImage} />
-            <img src="images/ACCESSOIRES ET DECORS/UMDLF/photo4.webp" onClick={handleImage} />
+            <img src="images/accessoiresetdecors/UMDLF/photo3.webp" onClick={handleImage} />
+            <img src="images/accessoiresetdecors/UMDLF/photo4.webp" onClick={handleImage} />
           </div>
           <div className={`${styles.row} ${styles.animation__transform_top}`}>
-            <img src="images/ACCESSOIRES ET DECORS/UMDLF/photo5.webp" onClick={handleImage} />
+            <img src="images/accessoiresetdecors/UMDLF/photo5.webp" onClick={handleImage} />
           </div>
         </div>
 
         <div className={styles.footer__project}>
           <div className={styles.animation__background}>
-            <LinkNextProject text="Projet Parures, objets d'art à porter" link="/parures" />
+            <LinkNextProject
+              text="Projet Parures, objets d'art à porter"
+              link="/accessoires&decors/parures"
+            />
           </div>
         </div>
       </div>

@@ -95,27 +95,27 @@ const Rush2022 = (): JSX.Element => {
             className={styles.animation__transform_top}
             controls
             controlsList="nodownload"
-            poster="images/ACCESSOIRES ET DECORS/RUSH/photo1.jpg"
+            poster="images/accessoiresetdecors/RUSH/photo1.jpg"
           >
-            <source src="images/ACCESSOIRES ET DECORS/RUSH/video.MOV" type="video/mp4" />
+            <source src="images/accessoiresetdecors/RUSH/video.MOV" type="video/mp4" />
           </video>
           <div className={`${styles.row} ${styles.animation__transform_top}`}>
-            <img src="images/ACCESSOIRES ET DECORS/RUSH/photo1.jpg" onClick={handleImage} />
-            <img src="images/ACCESSOIRES ET DECORS/RUSH/photo2.jpg" onClick={handleImage} />
+            <img src="images/accessoiresetdecors/RUSH/photo1.jpg" onClick={handleImage} />
+            <img src="images/accessoiresetdecors/RUSH/photo2.jpg" onClick={handleImage} />
           </div>
           <div className={`${styles.row} ${styles.animation__transform_top}`}>
-            <img src="images/ACCESSOIRES ET DECORS/RUSH/photo3.jpg" onClick={handleImage} />
-            <img src="images/ACCESSOIRES ET DECORS/RUSH/photo4.jpg" onClick={handleImage} />
+            <img src="images/accessoiresetdecors/RUSH/photo3.jpg" onClick={handleImage} />
+            <img src="images/accessoiresetdecors/RUSH/photo4.jpg" onClick={handleImage} />
           </div>
           <div className={`${styles.row} ${styles.animation__transform_top}`}>
-            <img src="images/ACCESSOIRES ET DECORS/RUSH/photo5.jpg" onClick={handleImage} />
-            <img src="images/ACCESSOIRES ET DECORS/RUSH/photo6.jpg" onClick={handleImage} />
+            <img src="images/accessoiresetdecors/RUSH/photo5.jpg" onClick={handleImage} />
+            <img src="images/accessoiresetdecors/RUSH/photo6.jpg" onClick={handleImage} />
           </div>
         </div>
 
         <div className={styles.footer__project}>
           <div className={styles.animation__background}>
-            <LinkNextProject text="Projet Othello" link="/othello" />
+            <LinkNextProject text="Projet Othello" link="/accessoires&decors/othello" />
           </div>
         </div>
       </div>

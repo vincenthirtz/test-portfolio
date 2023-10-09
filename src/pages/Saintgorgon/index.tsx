@@ -95,16 +95,16 @@ const Saintgorgon = (): JSX.Element => {
             className={styles.animation__transform_top}
             controls
             controlsList="nodownload"
-            poster="images/ACCESSOIRES ET DECORS/MARIONNETTE/photo2.webp"
+            poster="images/accessoiresetdecors/MARIONNETTE/photo2.webp"
           >
-            <source src="images/ACCESSOIRES ET DECORS/MARIONNETTE/video.MOV" type="video/mp4" />
+            <source src="images/accessoiresetdecors/MARIONNETTE/video.MOV" type="video/mp4" />
           </video>
           <div className={`${styles.row} ${styles.animation__transform_top}`}>
-            <img src="images/ACCESSOIRES ET DECORS/MARIONNETTE/photo1.webp" onClick={handleImage} />
-            <img src="images/ACCESSOIRES ET DECORS/MARIONNETTE/photo2.webp" onClick={handleImage} />
+            <img src="images/accessoiresetdecors/MARIONNETTE/photo1.webp" onClick={handleImage} />
+            <img src="images/accessoiresetdecors/MARIONNETTE/photo2.webp" onClick={handleImage} />
           </div>
           <div className={`${styles.row} ${styles.animation__transform_top}`}>
-            <img src="images/ACCESSOIRES ET DECORS/MARIONNETTE/photo3.webp" onClick={handleImage} />
+            <img src="images/accessoiresetdecors/MARIONNETTE/photo3.webp" onClick={handleImage} />
           </div>
         </div>
 
@@ -112,7 +112,7 @@ const Saintgorgon = (): JSX.Element => {
           <div className={styles.animation__background}>
             <LinkNextProject
               text={`Projet Tête de marionnette géante "Saint-Gorgon" 2022`}
-              link="/saint-gorgon-2022"
+              link="/accessoires&decors/saint-gorgon-2022"
             />
           </div>
         </div>

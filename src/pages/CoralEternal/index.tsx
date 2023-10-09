@@ -97,21 +97,21 @@ const CoralEternal = (): JSX.Element => {
         <div className={styles.images__container}>
           <div className={`${styles.row} ${styles.animation__transform_top}`}>
             <img
-              src="images/ACCESSOIRES ET DECORS/AUDE BOURGINE 2019/hermes-rouge.webp"
+              src="images/accessoiresetdecors/AUDE BOURGINE 2019/hermes-rouge.webp"
               onClick={handleImage}
             />
             <img
-              src="images/ACCESSOIRES ET DECORS/AUDE BOURGINE 2019/hermes-bleu.webp"
+              src="images/accessoiresetdecors/AUDE BOURGINE 2019/hermes-bleu.webp"
               onClick={handleImage}
             />
           </div>
           <div className={`${styles.row} ${styles.animation__transform_top}`}>
             <img
-              src="images/ACCESSOIRES ET DECORS/AUDE BOURGINE 2019/WIN_HK_2019_0078-scaled.jpg"
+              src="images/accessoiresetdecors/AUDE BOURGINE 2019/WIN_HK_2019_0078-scaled.jpg"
               onClick={handleImage}
             />
             <img
-              src="images/ACCESSOIRES ET DECORS/AUDE BOURGINE 2019/WIN_HK_2019_0080-1-scaled.jpg"
+              src="images/accessoiresetdecors/AUDE BOURGINE 2019/WIN_HK_2019_0080-1-scaled.jpg"
               onClick={handleImage}
             />
           </div>
@@ -119,7 +119,7 @@ const CoralEternal = (): JSX.Element => {
 
         <div className={styles.footer__project}>
           <div className={styles.animation__background}>
-            <LinkNextProject text="Cafete" link="/cafete" />
+            <LinkNextProject text="Cafete" link="/accessoires&decors/cafete" />
           </div>
         </div>
       </div>

@@ -89,21 +89,21 @@ const AnUnderseaOdyssey = (): JSX.Element => {
         <div className={styles.images__container}>
           <div className={`${styles.row} ${styles.animation__transform_top}`}>
             <img
-              src="images/ACCESSOIRES ET DECORS/AN UNDERSEA ODYSSEY/Photo1.jpg"
+              src="images/accessoiresetdecors/AN UNDERSEA ODYSSEY/Photo1.jpg"
               onClick={handleImage}
             />
             <img
-              src="images/ACCESSOIRES ET DECORS/AN UNDERSEA ODYSSEY/Photo2.jpg"
+              src="images/accessoiresetdecors/AN UNDERSEA ODYSSEY/Photo2.jpg"
               onClick={handleImage}
             />
           </div>
           <div className={`${styles.row} ${styles.animation__transform_top}`}>
             <img
-              src="images/ACCESSOIRES ET DECORS/AN UNDERSEA ODYSSEY/Photo3.jpg"
+              src="images/accessoiresetdecors/AN UNDERSEA ODYSSEY/Photo3.jpg"
               onClick={handleImage}
             />
             <img
-              src="images/ACCESSOIRES ET DECORS/AN UNDERSEA ODYSSEY/Photo4.jpg"
+              src="images/accessoiresetdecors/AN UNDERSEA ODYSSEY/Photo4.jpg"
               onClick={handleImage}
             />
           </div>
@@ -111,7 +111,7 @@ const AnUnderseaOdyssey = (): JSX.Element => {
 
         <div className={styles.footer__project}>
           <div className={styles.animation__background}>
-            <LinkNextProject text="Projet Nemesis" link="/nemesis" />
+            <LinkNextProject text="Projet Nemesis" link="/accessoires&decors/nemesis" />
           </div>
         </div>
       </div>

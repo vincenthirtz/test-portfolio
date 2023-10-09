@@ -96,16 +96,16 @@ const Lpdc = (): JSX.Element => {
         />
         <div className={styles.images__container}>
           <div className={`${styles.row} ${styles.animation__transform_top}`}>
-            <img src="images/ACCESSOIRES ET DECORS/LPDC/photo1.webp" onClick={handleImage} />
-            <img src="images/ACCESSOIRES ET DECORS/LPDC/photo2.webp" onClick={handleImage} />
+            <img src="images/accessoiresetdecors/LPDC/photo1.webp" onClick={handleImage} />
+            <img src="images/accessoiresetdecors/LPDC/photo2.webp" onClick={handleImage} />
           </div>
           <div className={`${styles.row} ${styles.animation__transform_top}`}>
-            <img src="images/ACCESSOIRES ET DECORS/LPDC/photo3.webp" onClick={handleImage} />
-            <img src="images/ACCESSOIRES ET DECORS/LPDC/photo4.webp" onClick={handleImage} />
+            <img src="images/accessoiresetdecors/LPDC/photo3.webp" onClick={handleImage} />
+            <img src="images/accessoiresetdecors/LPDC/photo4.webp" onClick={handleImage} />
           </div>
           <div className={`${styles.row} ${styles.animation__transform_top}`}>
-            <img src="images/ACCESSOIRES ET DECORS/LPDC/photo5.webp" onClick={handleImage} />
-            <img src="images/ACCESSOIRES ET DECORS/LPDC/photo6.webp" onClick={handleImage} />
+            <img src="images/accessoiresetdecors/LPDC/photo5.webp" onClick={handleImage} />
+            <img src="images/accessoiresetdecors/LPDC/photo6.webp" onClick={handleImage} />
           </div>
         </div>
 
@@ -113,7 +113,7 @@ const Lpdc = (): JSX.Element => {
           <div className={styles.animation__background}>
             <LinkNextProject
               text="Projet La Constellation de l'Ours"
-              link="/la-constellation-de-lours"
+              link="/accessoires&decors/la-constellation-de-lours"
             />
           </div>
         </div>
