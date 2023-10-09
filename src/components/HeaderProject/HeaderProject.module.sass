@@ -103,7 +103,7 @@
         margin: 0 1rem
 
   .about
-    width: 40%
+    width: 100%
     display: flex
     justify-content: center
     align-items: flex-start
@@ -135,10 +135,11 @@
     .container__services
       display: flex
       justify-content: space-between
-      align-items: flex-start
+      align-items: flex-end
       font-size: 1.8rem
       font-weight: 500
       font-family: $main-font
+      width: 100%
       @media screen and ( max-width: 1130px )
         width: 100%
       @media screen and ( max-width: 520px )
@@ -150,6 +151,7 @@
         justify-content: center
         align-items: flex-start
         flex-direction: column
+        max-width: 60%
         li
           display: inline-block
           margin-bottom: .2rem
