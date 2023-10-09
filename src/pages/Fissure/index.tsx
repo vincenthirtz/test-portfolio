@@ -95,15 +95,15 @@ const Fissure = (): JSX.Element => {
         />
         <div className={styles.images__container}>
           <div className={`${styles.row} ${styles.animation__transform_top}`}>
-            <img src="images/accessoiresetdecors/FISSURE/plan-flou.webp" onClick={handleImage} />
-            <img src="images/accessoiresetdecors/FISSURE/photo-rouge.webp" onClick={handleImage} />
+            <img src="/images/accessoiresetdecors/FISSURE/plan-flou.webp" onClick={handleImage} />
+            <img src="/images/accessoiresetdecors/FISSURE/photo-rouge.webp" onClick={handleImage} />
           </div>
           <div className={`${styles.row} ${styles.animation__transform_top}`}>
             <img
               src="images/accessoiresetdecors/FISSURE/photo-noir-blanc.webp"
               onClick={handleImage}
             />
-            <img src="images/accessoiresetdecors/FISSURE/focus.jpg" onClick={handleImage} />
+            <img src="/images/accessoiresetdecors/FISSURE/focus.jpg" onClick={handleImage} />
           </div>
         </div>
 

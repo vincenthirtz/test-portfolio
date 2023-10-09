@@ -100,16 +100,16 @@ const Rush2022 = (): JSX.Element => {
             <source src="images/accessoiresetdecors/RUSH/video.MOV" type="video/mp4" />
           </video>
           <div className={`${styles.row} ${styles.animation__transform_top}`}>
-            <img src="images/accessoiresetdecors/RUSH/photo1.jpg" onClick={handleImage} />
-            <img src="images/accessoiresetdecors/RUSH/photo2.jpg" onClick={handleImage} />
+            <img src="/images/accessoiresetdecors/RUSH/photo1.jpg" onClick={handleImage} />
+            <img src="/images/accessoiresetdecors/RUSH/photo2.jpg" onClick={handleImage} />
           </div>
           <div className={`${styles.row} ${styles.animation__transform_top}`}>
-            <img src="images/accessoiresetdecors/RUSH/photo3.jpg" onClick={handleImage} />
-            <img src="images/accessoiresetdecors/RUSH/photo4.jpg" onClick={handleImage} />
+            <img src="/images/accessoiresetdecors/RUSH/photo3.jpg" onClick={handleImage} />
+            <img src="/images/accessoiresetdecors/RUSH/photo4.jpg" onClick={handleImage} />
           </div>
           <div className={`${styles.row} ${styles.animation__transform_top}`}>
-            <img src="images/accessoiresetdecors/RUSH/photo5.jpg" onClick={handleImage} />
-            <img src="images/accessoiresetdecors/RUSH/photo6.jpg" onClick={handleImage} />
+            <img src="/images/accessoiresetdecors/RUSH/photo5.jpg" onClick={handleImage} />
+            <img src="/images/accessoiresetdecors/RUSH/photo6.jpg" onClick={handleImage} />
           </div>
         </div>
 

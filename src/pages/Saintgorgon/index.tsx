@@ -100,11 +100,11 @@ const Saintgorgon = (): JSX.Element => {
             <source src="images/accessoiresetdecors/MARIONNETTE/video.MOV" type="video/mp4" />
           </video>
           <div className={`${styles.row} ${styles.animation__transform_top}`}>
-            <img src="images/accessoiresetdecors/MARIONNETTE/photo1.webp" onClick={handleImage} />
-            <img src="images/accessoiresetdecors/MARIONNETTE/photo2.webp" onClick={handleImage} />
+            <img src="/images/accessoiresetdecors/MARIONNETTE/photo1.webp" onClick={handleImage} />
+            <img src="/images/accessoiresetdecors/MARIONNETTE/photo2.webp" onClick={handleImage} />
           </div>
           <div className={`${styles.row} ${styles.animation__transform_top}`}>
-            <img src="images/accessoiresetdecors/MARIONNETTE/photo3.webp" onClick={handleImage} />
+            <img src="/images/accessoiresetdecors/MARIONNETTE/photo3.webp" onClick={handleImage} />
           </div>
         </div>
 

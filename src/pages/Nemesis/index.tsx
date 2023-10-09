@@ -104,7 +104,7 @@ const Nemesis = (): JSX.Element => {
         />
         <div className={styles.images__container}>
           <div className={`${styles.row} ${styles.animation__transform_top}`}>
-            <img src="images/accessoiresetdecors/NEMESIS/nemesis.jpg" onClick={handleImage} />
+            <img src="/images/accessoiresetdecors/NEMESIS/nemesis.jpg" onClick={handleImage} />
           </div>
         </div>
 

@@ -104,12 +104,15 @@ const Cafete = (): JSX.Element => {
             <source src="images/louis-pion/louis-pion-ethan-piboyeux.mp4" type="video/mp4" />
           </video> */}
           <div className={`${styles.row} ${styles.animation__transform_top}`}>
-            <img src="images/accessoiresetdecors/CAFETE/cafete-two.webp" onClick={handleImage} />
-            <img src="images/accessoiresetdecors/CAFETE/cafete-yellow.webp" onClick={handleImage} />
+            <img src="/images/accessoiresetdecors/CAFETE/cafete-two.webp" onClick={handleImage} />
+            <img
+              src="/images/accessoiresetdecors/CAFETE/cafete-yellow.webp"
+              onClick={handleImage}
+            />
           </div>
           <div className={`${styles.row} ${styles.animation__transform_top}`}>
-            <img src="images/accessoiresetdecors/CAFETE/structure.webp" onClick={handleImage} />
-            <img src="images/accessoiresetdecors/CAFETE/deploye.jpg" onClick={handleImage} />
+            <img src="/images/accessoiresetdecors/CAFETE/structure.webp" onClick={handleImage} />
+            <img src="/images/accessoiresetdecors/CAFETE/deploye.jpg" onClick={handleImage} />
           </div>
         </div>
 

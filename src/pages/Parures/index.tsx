@@ -101,20 +101,23 @@ const Parures = (): JSX.Element => {
         />
         <div className={styles.images__container}>
           <div className={`${styles.row} ${styles.animation__transform_top}`}>
-            <img src="images/accessoiresetdecors/PARURES/affiche.webp" onClick={handleImage} />
-            <img src="images/accessoiresetdecors/PARURES/explications.webp" onClick={handleImage} />
+            <img src="/images/accessoiresetdecors/PARURES/affiche.webp" onClick={handleImage} />
+            <img
+              src="/images/accessoiresetdecors/PARURES/explications.webp"
+              onClick={handleImage}
+            />
           </div>
           <div className={`${styles.row} ${styles.animation__transform_top}`}>
-            <img src="images/accessoiresetdecors/PARURES/photo1.webp" onClick={handleImage} />
-            <img src="images/accessoiresetdecors/PARURES/photo2.webp" onClick={handleImage} />
+            <img src="/images/accessoiresetdecors/PARURES/photo1.webp" onClick={handleImage} />
+            <img src="/images/accessoiresetdecors/PARURES/photo2.webp" onClick={handleImage} />
           </div>
           <div className={`${styles.row} ${styles.animation__transform_top}`}>
-            <img src="images/accessoiresetdecors/PARURES/photo3.webp" onClick={handleImage} />
-            <img src="images/accessoiresetdecors/PARURES/photo4.webp" onClick={handleImage} />
+            <img src="/images/accessoiresetdecors/PARURES/photo3.webp" onClick={handleImage} />
+            <img src="/images/accessoiresetdecors/PARURES/photo4.webp" onClick={handleImage} />
           </div>
           <div className={`${styles.row} ${styles.animation__transform_top}`}>
-            <img src="images/accessoiresetdecors/PARURES/photo5.webp" onClick={handleImage} />
-            <img src="images/accessoiresetdecors/PARURES/photo6.webp" onClick={handleImage} />
+            <img src="/images/accessoiresetdecors/PARURES/photo5.webp" onClick={handleImage} />
+            <img src="/images/accessoiresetdecors/PARURES/photo6.webp" onClick={handleImage} />
           </div>
         </div>
 

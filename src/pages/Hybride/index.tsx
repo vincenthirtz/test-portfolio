@@ -102,11 +102,11 @@ const Hybride = (): JSX.Element => {
             <source src="images/accessoiresetdecors/HYBRIDE/video.MP4" type="video/mp4" />
           </video>
           <div className={`${styles.row} ${styles.animation__transform_top}`}>
-            <img src="images/accessoiresetdecors/HYBRIDE/face.webp" onClick={handleImage} />
-            <img src="images/accessoiresetdecors/HYBRIDE/profil.webp" onClick={handleImage} />
+            <img src="/images/accessoiresetdecors/HYBRIDE/face.webp" onClick={handleImage} />
+            <img src="/images/accessoiresetdecors/HYBRIDE/profil.webp" onClick={handleImage} />
           </div>
           <div className={`${styles.row} ${styles.animation__transform_top}`}>
-            <img src="images/accessoiresetdecors/HYBRIDE/haut.webp" onClick={handleImage} />
+            <img src="/images/accessoiresetdecors/HYBRIDE/haut.webp" onClick={handleImage} />
           </div>
         </div>
 

@@ -100,15 +100,15 @@ const Umdlf = (): JSX.Element => {
         />
         <div className={styles.images__container}>
           <div className={`${styles.row} ${styles.animation__transform_top}`}>
-            <img src="images/accessoiresetdecors/UMDLF/photo1.webp" onClick={handleImage} />
-            <img src="images/accessoiresetdecors/UMDLF/photo2.webp" onClick={handleImage} />
+            <img src="/images/accessoiresetdecors/UMDLF/photo1.webp" onClick={handleImage} />
+            <img src="/images/accessoiresetdecors/UMDLF/photo2.webp" onClick={handleImage} />
           </div>
           <div className={`${styles.row} ${styles.animation__transform_top}`}>
-            <img src="images/accessoiresetdecors/UMDLF/photo3.webp" onClick={handleImage} />
-            <img src="images/accessoiresetdecors/UMDLF/photo4.webp" onClick={handleImage} />
+            <img src="/images/accessoiresetdecors/UMDLF/photo3.webp" onClick={handleImage} />
+            <img src="/images/accessoiresetdecors/UMDLF/photo4.webp" onClick={handleImage} />
           </div>
           <div className={`${styles.row} ${styles.animation__transform_top}`}>
-            <img src="images/accessoiresetdecors/UMDLF/photo5.webp" onClick={handleImage} />
+            <img src="/images/accessoiresetdecors/UMDLF/photo5.webp" onClick={handleImage} />
           </div>
         </div>
 

@@ -98,15 +98,15 @@ const Saintgorgon2022 = (): JSX.Element => {
         />
         <div className={styles.images__container}>
           <div className={`${styles.row} ${styles.animation__transform_top}`}>
-            <img src="images/accessoiresetdecors/MARIONNETTE2/photo1.webp" onClick={handleImage} />
-            <img src="images/accessoiresetdecors/MARIONNETTE2/photo2.webp" onClick={handleImage} />
+            <img src="/images/accessoiresetdecors/MARIONNETTE2/photo1.webp" onClick={handleImage} />
+            <img src="/images/accessoiresetdecors/MARIONNETTE2/photo2.webp" onClick={handleImage} />
           </div>
           <div className={`${styles.row} ${styles.animation__transform_top}`}>
-            <img src="images/accessoiresetdecors/MARIONNETTE2/photo3.webp" onClick={handleImage} />
-            <img src="images/accessoiresetdecors/MARIONNETTE2/photo4.webp" onClick={handleImage} />
+            <img src="/images/accessoiresetdecors/MARIONNETTE2/photo3.webp" onClick={handleImage} />
+            <img src="/images/accessoiresetdecors/MARIONNETTE2/photo4.webp" onClick={handleImage} />
           </div>
           <div className={`${styles.row} ${styles.animation__transform_top}`}>
-            <img src="images/accessoiresetdecors/MARIONNETTE2/photo5.webp" onClick={handleImage} />
+            <img src="/images/accessoiresetdecors/MARIONNETTE2/photo5.webp" onClick={handleImage} />
           </div>
         </div>
 

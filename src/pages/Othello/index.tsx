@@ -99,11 +99,11 @@ const Othello = (): JSX.Element => {
         />
         <div className={styles.images__container}>
           <div className={`${styles.row} ${styles.animation__transform_top}`}>
-            <img src="images/accessoiresetdecors/OTHELLO/photo1.jpg" onClick={handleImage} />
-            <img src="images/accessoiresetdecors/OTHELLO/photo2.jpg" onClick={handleImage} />
+            <img src="/images/accessoiresetdecors/OTHELLO/photo1.jpg" onClick={handleImage} />
+            <img src="/images/accessoiresetdecors/OTHELLO/photo2.jpg" onClick={handleImage} />
           </div>
           <div className={`${styles.row} ${styles.animation__transform_top}`}>
-            <img src="images/accessoiresetdecors/OTHELLO/photo3.jpg" onClick={handleImage} />
+            <img src="/images/accessoiresetdecors/OTHELLO/photo3.jpg" onClick={handleImage} />
           </div>
         </div>
 

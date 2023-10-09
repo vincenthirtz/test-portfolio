@@ -88,12 +88,12 @@ const MasqueComedia = (): JSX.Element => {
         />
         <div className={styles.images__container}>
           <div className={`${styles.row} ${styles.animation__transform_top}`}>
-            <img src="images/accessoiresetdecors/MASQUE/photo1.webp" onClick={handleImage} />
-            <img src="images/accessoiresetdecors/MASQUE/photo2.webp" onClick={handleImage} />
+            <img src="/images/accessoiresetdecors/MASQUE/photo1.webp" onClick={handleImage} />
+            <img src="/images/accessoiresetdecors/MASQUE/photo2.webp" onClick={handleImage} />
           </div>
           <div className={`${styles.row} ${styles.animation__transform_top}`}>
-            <img src="images/accessoiresetdecors/MASQUE/photo3.webp" onClick={handleImage} />
-            <img src="images/accessoiresetdecors/MASQUE/photo4.webp" onClick={handleImage} />
+            <img src="/images/accessoiresetdecors/MASQUE/photo3.webp" onClick={handleImage} />
+            <img src="/images/accessoiresetdecors/MASQUE/photo4.webp" onClick={handleImage} />
           </div>
         </div>
 
