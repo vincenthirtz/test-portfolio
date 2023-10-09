@@ -12,6 +12,7 @@ import Lcdo from 'pages/Lcdo';
 import Umdlf from 'pages/Umdlf';
 import Parures from 'pages/Parures';
 import Mun from 'pages/Mun';
+import Nemesis from 'pages/Nemesis';
 import Saintgorgon from 'pages/Saintgorgon';
 import Saintgorgon2022 from 'pages/Saintgorgon2022';
 import Rush2022 from 'pages/Rush2022';
@@ -32,21 +33,22 @@ const Router = (): JSX.Element => {
         <Route path="/all-projects" element={<AllProjects />} />
         <Route path="/accessoires&decors" element={<AccessoiresAndDecors />} />
         <Route path="/contact" element={<Contact />} />
-        <Route path="/aude-bourgine" element={<CoralEternal />} />
-        <Route path="/cafete" element={<Cafete />} />
-        <Route path="/fissure" element={<Fissure />} />
-        <Route path="/hybride" element={<Hybride />} />
-        <Route path="/le-poids-des-choses" element={<Lpdc />} />
-        <Route path="/la-constellation-de-lours" element={<Lcdo />} />
-        <Route path="/une-mort-dans-la-famille" element={<Umdlf />} />
-        <Route path="/parures" element={<Parures />} />
-        <Route path="/albert-de-mun" element={<Mun />} />
-        <Route path="/saint-gorgon" element={<Saintgorgon />} />
-        <Route path="/saint-gorgon-2022" element={<Saintgorgon2022 />} />
-        <Route path="/rush-festival-2022" element={<Rush2022 />} />
-        <Route path="/othello" element={<Othello />} />
-        <Route path="/an-undersea-odyssey" element={<AnUnderseaOdyssey />} />
-        <Route path="/masque-comedia-dellarte" element={<MasqueComedia />} />
+        <Route path="/accessoires&decors/aude-bourgine" element={<CoralEternal />} />
+        <Route path="/accessoires&decors/nemesis" element={<Nemesis />} />
+        <Route path="/accessoires&decors/cafete" element={<Cafete />} />
+        <Route path="/accessoires&decors/fissure" element={<Fissure />} />
+        <Route path="/accessoires&decors/hybride" element={<Hybride />} />
+        <Route path="/accessoires&decors/le-poids-des-choses" element={<Lpdc />} />
+        <Route path="/accessoires&decors/la-constellation-de-lours" element={<Lcdo />} />
+        <Route path="/accessoires&decors/une-mort-dans-la-famille" element={<Umdlf />} />
+        <Route path="/accessoires&decors/parures" element={<Parures />} />
+        <Route path="/accessoires&decors/albert-de-mun" element={<Mun />} />
+        <Route path="/accessoires&decors/saint-gorgon" element={<Saintgorgon />} />
+        <Route path="/accessoires&decors/saint-gorgon-2022" element={<Saintgorgon2022 />} />
+        <Route path="/accessoires&decors/rush-festival-2022" element={<Rush2022 />} />
+        <Route path="/accessoires&decors/othello" element={<Othello />} />
+        <Route path="/accessoires&decors/an-undersea-odyssey" element={<AnUnderseaOdyssey />} />
+        <Route path="/accessoires&decors/masque-comedia-dellarte" element={<MasqueComedia />} />
         <Route path="/services" element={<Services />} />
         <Route path="/legal-notices" element={<MentionsLegales />} />
         <Route path="*" element={<Error404 />} />
